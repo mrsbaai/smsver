@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
+
+    @yield('head')
+</head>
+<body>
+
+
+
+    @if(Auth::check())
+        <div class="container col-xs-6 col-md-6 text-left" style="padding-top:5px;">
+            <div class="btn-group" data-toggle="buttons">
+                <h3  style="margin:0px;padding:0px;"> [SMS-Verification.net]</h3>
+                @if(Auth::check())
+                    <medium class="text-muted">Logged as: {{Auth::user()->email}}</medium>
+                @endif
+            </div>
+
+        </div>
+
+        <div class="container col-xs-6 text-right" style="padding-top:10px;">
+            <div class="btn-group" data-toggle="buttons">
+                <a href="/logout" type="button" class="btn btn-dark">Logout</a>
+            </div>
+        </div>
+    @else
+        <div class="container col-xs-12 col-md-5 text-left" style="padding-top:5px;">
+            <div class="btn-group" data-toggle="buttons">
+                <h3 style="margin:0px;padding:0px;"> [SMS-Verification.net]</h3>
+            </div>
+
+        </div>
+
+        <div class="container col-xs-12 col-md-7 text-right" style="padding-top:10px;">
+            <div class="btn-group" data-toggle="buttons">
+                <a  href="/" type="button" class="btn btn-dark">Home</a>
+                <a  href="/api" type="button" class="btn btn-dark">Api</a>
+                <a  href="/pricing" type="button" class="btn btn-dark">Pricing</a>
+                <a  href="/getstarted" type="button" class="btn btn-dark">Register</a>
+                <a  href="/login" type="button" class="btn btn-dark">Login</a>
+            </div>
+        </div>
+    @endif
+
+
+
+
+
+    <div class="container col-xs-12 col-sm-12 col-lg-12 col-md-12">
+        @yield('content')
+    </div>
+
+
+    <div class="container col-xs-12 col-sm-12 col-lg-12 col-md-12 text-center" style="padding-top:70px;padding-bottom:30px;">
+        <a  href="/">SMS-Verification.net</a> &copy; 2017
+        @if(!Auth::check())
+            -
+            <a  href="/privacy">Privacy</a> |
+            <a  href="/terms">Terms</a> |
+            <a  href="/api">Api</a> |
+            <a  href="/pricing">Pricing</a> |
+            <a  href="/contact">Contact</a> |
+            <a  href="/register">Register</a> |
+            <a  href="/login">Login</a>
+        @endif
+    </div>
+
+
+
+
+
+@yield('bottom')
+
+</body>
+</html>

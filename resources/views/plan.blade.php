@@ -1,0 +1,105 @@
+
+@extends('layouts.app')
+
+
+
+
+
+@section('head')
+
+    <title>[SMS-Verification] Payment</title>
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+
+    <!--Icon Fonts-->
+    <link rel="stylesheet" media="screen" href="../fonts/font-awesome/font-awesome.min.css" />
+
+@stop
+
+@section('content')
+
+    <div class="container col-sm-12 text-center" style="padding-bottom:20px;">
+        <h1>Please Choose Your Plan:</h1>
+    </div>
+    <div class="container marketing col-sm-12 text-center">
+
+        <section id="pricing-table">
+            <div class="container">
+                <div class="row">
+                    <div class="pricing col-lg-12">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="pricing-table">
+                                <div class="pricing-header" style="background-color: #D39D05;">
+                                    <p class="pricing-title">Starter Plan</p>
+                                    <p class="pricing-rate"><sup>$</sup> 3<span class="smaller">00</span> <span class="small-pricing">/Year.</span></p>
+                                    <a href="/payment/1" class="btn btn-custom">And Get Free Month</a>
+                                </div>
+
+                                <div class="pricing-list">
+                                    <ul>
+                                        <li><span class="numbers"><i class="fa fa-mobile-phone"></i>200 Numbers</span></li>
+                                        @yield('features')
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="pricing-table">
+                                <div class="pricing-header"  style="background-color: #7D1E4A;">
+                                    <p class="pricing-title">Business Plan</p>
+                                    <p class="pricing-rate"><sup>$</sup> 5<span class="smaller">00</span> <span class="small-pricing">/Year.</span></p>
+                                    <a href="/payment/2" class="btn btn-custom">And Get Free Month</a>
+                                </div>
+
+                                <div class="pricing-list">
+                                    <ul>
+                                        <li><span class="numbers"><i class="fa fa-mobile-phone"></i>500 Numbers</span></li>
+                                        @yield('features')
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="pricing-table">
+                                <div class="pricing-header" style="background-color: #14646D;">
+                                    <p class="pricing-title">Extended Plan</p>
+                                    <p class="pricing-rate"><sup>$</sup> 7<span class="smaller">00</span> <span class="small-pricing">/Year.</span></p>
+                                    <a href="/payment/3" class="btn btn-custom">And Get Free Month</a>
+                                </div>
+
+                                <div class="pricing-list">
+                                    <ul>
+                                        <li><span class="numbers"><i class="fa fa-mobile-phone"></i>1000 Numbers</span></li>
+                                        @yield('features')
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+@stop
+
+
+
+@section('bottom')
+
+@stop

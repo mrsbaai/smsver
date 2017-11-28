@@ -1,0 +1,161 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
+use App\User;
+use App\Contact;
+use Carbon\Carbon;
+use Symfony\Component\HttpFoundation\Cookie;
+
+
+class userController extends Controller
+{
+
+
+    public function test(){
+
+    }
+
+    public function UsdToBtc($usd){
+        $CoinDesk = file_get_contents('http://api.coindesk.com/v1/bpi/currentprice.json');
+        $CoinDesk = json_decode($CoinDesk, true);
+        $usd_btc = ($CoinDesk != "" ? $CoinDesk['bpi']['USD']['rate_float'] : $btcven_json_decode['BTC']['USD']);
+        $btc = $usd/$usd_btc;
+        $btc = number_format($btc, 6);
+        return $btc;
+    }
+
+
+    public function create()
+    {
+
+
+
+        $password = Input::get('reg_password');
+        $email =  Input::get('reg_email');
+
+        try{
+            $user = new User();
+            $user->email = $email;
+            $user->password = bcrypt($password);
+            $user->created_at = Carbon::now();
+            $user->save();
+
+            if (Auth::attempt(['email' => $email, 'password' => $password], true)) {
+                return redirect()->intended('payment');
+            }else{
+                flash('Something went wrong')->error();
+                return redirect()->intended('register');
+            }
+
+        }
+        catch(\Exception $e){
+            flash('Something went wrong')->error();
+            return redirect()->intended('register');
+        }
+
+
+
+    }
+
+
+    public function login()
+    {
+
+        $password = Input::get('lg_password');
+        $email =  Input::get('lg_email');
+        $remember = Input::get('lg_remember');
+
+        if (Auth::attempt(['email' => $email, 'password' => $password], $remember)) {
+            return redirect()->intended('payment');
+        }else{
+            flash('Something went wrong')->error();
+            return redirect()->intended('register');
+        }
+
+
+    }
+
+    public function contact(){
+        $email = Input::get('lg_email');
+        $subject = Input::get('lg_subject');
+        $message = Input::get('lg_message');
+
+
+
+        try{
+
+            $contact = new Contact();
+            $contact->email = $email;
+            $contact->subject = $subject;
+            $contact->message = $message;
+            $contact->created_at = Carbon::now();
+            $contact->save();
+
+            flash('Thank you for your message! We will get back to you as soon as possible.')->clear();
+            return redirect()->intended('contact');
+        }
+        catch(\Exception $e){
+            flash('Something went wrong')->error();
+            return redirect()->intended('contact');
+        }
+    }
+
+    public function showPayment($plan = null, Request $request){
+
+
+        if ($plan !== null){
+            return redirect('/payment')->cookie('plan', $plan, '60');
+        }
+
+        if ($request->cookie('plan')){
+            $address = $this->getBicoinAddress();
+
+            switch ($request->cookie('plan')) {
+                case 1:
+                    $plan_str = "Starter";
+                    $usd = "300";
+                    $btc = $this->UsdToBtc($usd);
+                    $numbers = "200";
+                    break;
+                case 2:
+                    $plan_str = "Business";
+                    $usd = "500";
+                    $btc = $this->UsdToBtc($usd);
+                    $numbers = "500";
+                    break;
+                case 3:
+                    $plan_str = "Extended";
+                    $usd = "700";
+                    $btc = $this->UsdToBtc($usd);
+                    $numbers = "1000";
+                    break;
+            }
+
+            return view('payment')
+                ->with('plan',$plan_str)
+                ->with('usd',$usd)
+                ->with('btc',$btc)
+                ->with('address',$address)
+                ->with('numbers',$numbers);
+        }else{
+            return view('plan');
+        }
+
+    }
+
+
+    private function getBicoinAddress(){
+        $arrX = array(
+            "1K6THAhE17LkbCecLat34ncD3JKwKjjMK5",
+            "1Fv3PYg2ezjoFKJTPbAmD2htruX8vx4QkM",
+            "1G3LaSAC7cWHAU2dU5UwnyVeEpmzuXc7rD",
+            "1BnZC7He6knXqD5M5bdXY2sLnTGmNjYv4n");
+        $randIndex = array_rand($arrX);
+        return $arrX[$randIndex];
+
+    }
+}

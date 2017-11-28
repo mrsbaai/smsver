@@ -11,6 +11,43 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/','pagesController@home');
+
+Route::get('/api','pagesController@api');
+
+Route::get('/payment/{plan?}','userController@showPayment');
+
+Route::get('/plan','pagesController@plan');
+
+Route::get('/terms','pagesController@terms');
+
+Route::get('/privacy','pagesController@privacy');
+
+Route::get('/login','pagesController@login');
+Route::get('/test','userController@test');
+Route::post('/login','userController@login');
+
+Route::get('/forgot','pagesController@forgot');
+
+Route::get('/logout','pagesController@logout');
+
+
+Route::get('/getstarted/{plan?}','pagesController@register');
+
+
+Route::get('/register/{plan?}','pagesController@register');
+
+Route::post('/register','userController@create');
+Route::post('/getstarted','userController@create');
+
+Route::get('/pricing','pagesController@pricing');
+
+Route::get('/contact','pagesController@contact');
+Route::post('/contact','userController@contact');
+
+
+Route::post('/log','messagesController@log');
+Route::get('/log','messagesController@log');
+
+Route::get('/newmessages/{id}','messagesController@newMessages');
