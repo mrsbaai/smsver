@@ -179,7 +179,8 @@ return [
 
         SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        Laracasts\Flash\FlashServiceProvider::class
+        Laracasts\Flash\FlashServiceProvider::class,
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
 
     ],
 
