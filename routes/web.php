@@ -25,6 +25,9 @@ Route::get('/terms','pagesController@terms');
 Route::get('/privacy','pagesController@privacy');
 
 Route::get('/login','pagesController@login');
+
+Route::get('/account','pagesController@login');
+
 Route::get('/test','userController@test');
 Route::post('/login','userController@login');
 

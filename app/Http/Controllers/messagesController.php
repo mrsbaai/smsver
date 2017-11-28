@@ -69,7 +69,7 @@ class messagesController extends Controller
         if ($from <> null and $to <> null and $text <> null){
             $this->logMessage($from, $to, $text);
         }else{
-            return "";
+            return "No data!";
         }
 
         return "success!";
