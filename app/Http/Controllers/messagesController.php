@@ -57,7 +57,7 @@ class messagesController extends Controller
 
     public function tropo(){
 
-
+        Log::info("me inside");
 
         $from = null;
         $to = null;
