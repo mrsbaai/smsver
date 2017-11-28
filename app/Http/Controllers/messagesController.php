@@ -9,6 +9,9 @@ use App\Libraries\Session;
 
 use Carbon\Carbon;
 
+use Illuminate\Support\Facades\Log;
+
+
 class messagesController extends Controller
 {
     public function getMessages(){
@@ -65,7 +68,7 @@ class messagesController extends Controller
         $text = $session->getInitialText();
         $from = $session->getFrom();
         $to = $session->getTo();
-
+        Log::info($text);
         if ($from <> null and $to <> null and $text <> null){
             $this->logMessage($from, $to, $text);
         }else{
