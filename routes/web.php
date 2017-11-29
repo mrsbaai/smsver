@@ -33,6 +33,7 @@ Route::get('/test','userController@test');
 Route::post('/login','userController@login');
 
 Route::get('/forgot','pagesController@forgot');
+Route::post('/forgot','userController@forgot');
 
 Route::get('/logout','pagesController@logout');
 

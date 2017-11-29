@@ -7,9 +7,12 @@ use Symfony\Component\HttpFoundation\Cookie;
 use Illuminate\Support\Facades\Auth;
 use DB;
 
+
 class pagesController extends Controller
 {
     public function home(){
+
+        if (Auth::check()){return redirect()->intended('payment');}
         $messageController = new messagesController();
         $messages = $messageController->getMessages(null);
         $lastMessage =  $messages[0]['id'];
@@ -18,6 +21,7 @@ class pagesController extends Controller
     }
 
     public function pricing(){
+        if (Auth::check()){return redirect()->intended('plan');}
         return view('pricing');
     }
 
@@ -36,12 +40,15 @@ class pagesController extends Controller
     }
 
     public function forgot(){
+        if (Auth::check()){return redirect()->intended('payment');}
         return view('forgot');
     }
     public function contact(){
+        if (Auth::check()){return redirect()->intended('payment');}
         return view('contact');
     }
     public function register($plan = null){
+        if (Auth::check()){return redirect()->intended('payment');}
         if ($plan !== null){
             return redirect('/register')->cookie('plan', $plan, '60');
         }
@@ -56,9 +63,11 @@ class pagesController extends Controller
         return view('privacy');
     }
     public function login(){
+        if (Auth::check()){return redirect()->intended('payment');}
         return view('login');
     }
     public function api(){
+        if (Auth::check()){return redirect()->intended('payment');}
         return view('api');
     }
 }

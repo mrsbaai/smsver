@@ -73,12 +73,18 @@ class userController extends Controller
             return redirect()->intended('payment');
         }else{
             flash('Something went wrong')->error();
-            return redirect()->intended('register');
+            return redirect()->intended('login');
         }
 
 
     }
 
+    public function forgot(){
+
+        flash('Please check your email address!')->clear();
+        return redirect()->intended('forgot');
+
+    }
     public function contact(){
         $email = Input::get('lg_email');
         $subject = Input::get('lg_subject');
