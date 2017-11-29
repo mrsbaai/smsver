@@ -159,6 +159,9 @@ class userController extends Controller
             "1K6THAhE17LkbCecLat34ncD3JKwKjjMK5",
             "1Fv3PYg2ezjoFKJTPbAmD2htruX8vx4QkM",
             "1G3LaSAC7cWHAU2dU5UwnyVeEpmzuXc7rD",
+            "1EMieMUHsWgyeS39puArw1QqrJaU2xmCgf",
+            "1CEp9EfhhvE9qQUVqJtS1KxqPXnTmgf7Ps",
+            "19RC6JZfNhQboV7zQ1WsXuB6PvRRD6sZD3",
             "1BnZC7He6knXqD5M5bdXY2sLnTGmNjYv4n");
         $randIndex = array_rand($arrX);
         return $arrX[$randIndex];
