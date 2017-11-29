@@ -51,7 +51,7 @@ Route::get('/contact','pagesController@contact');
 Route::post('/contact','userController@contact');
 
 
-Route::post('/tropo','messagesController@tropo');
-Route::get('/tropo','messagesController@tropo');
 
 Route::get('/newmessages/{id}','messagesController@newMessages');
+
+Route::get('/log/{from}/{to}/{text}','messagesController@logMessage');

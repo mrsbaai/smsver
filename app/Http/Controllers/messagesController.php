@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Message;
-use Illuminate\Http\Request;
-
-use App\Libraries\Session;
 
 use Carbon\Carbon;
 
@@ -55,45 +52,30 @@ class messagesController extends Controller
     }
 
 
-    public function tropo(){
 
+
+    public function logMessage($from = null,$to = null,$text = null){
         Log::info("me inside");
 
-        $from = null;
-        $to = null;
-        $text = null;
-
-        $session = new Session();
-
-        $text = $session->getInitialText();
-        $from = $session->getFrom();
-        $to = $session->getTo();
-        Log::info($text);
         if ($from <> null and $to <> null and $text <> null){
-            $this->logMessage($from, $to, $text);
+            $text = urldecode($text);
+
+            $time = Carbon::now();
+            $message = new message();
+            $message->message = $text;
+            $message->sender = $from;
+            $message->receiver = $to;
+            $message->date = $time;
+            $message->save();
+
+            $this->sendCallback($from,$to,$text);
         }else{
-            return "No data!";
+            return "Nice Try ;)";
         }
 
         return "success!";
     }
 
-    public function logMessage($from, $to, $text){
-
-        $time = Carbon::now();
-        $message = new message();
-        $message->message = $text;
-        $message->sender = $from;
-        $message->receiver = $to;
-        $message->date = $time;
-        $message->save();
-
-        $this->sendCallback($from,$to,$text);
-
-        return "";
-
-
-    }
 
 
 }
