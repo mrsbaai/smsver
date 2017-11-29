@@ -67,8 +67,7 @@ class messagesController extends Controller
             $message->receiver = $to;
             $message->date = $time;
             $message->save();
-
-            $this->sendCallback($from,$to,$text);
+            
         }else{
             return "Nice Try ;)";
         }
