@@ -19,6 +19,7 @@ class CreateMessagesTable extends Migration
             $table->string('sender',14);
             $table->string('receiver',14);
             $table->dateTime('date');
+            $table->timestamps();
         });
     }
 
