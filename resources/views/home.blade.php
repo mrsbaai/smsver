@@ -5,13 +5,13 @@
 @section('head')
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="SMS-Verification" />
+    <meta property="og:title" content="[SMS-Verification]" />
     <meta property="og:type" content="WebSite" />
     <meta property="og:description" content="Reliable API to Bypass SMS Verification" />
-    <meta property="og:site_name" content="SMS-Verification" />
+    <meta property="og:site_name" content="[SMS-Verification]" />
     <meta name="keywords" content="sms, verification">
     <meta name="description" content="Reliable API to Bypass SMS Verification">
-    <title>SMS-Verification</title>
+    <title>[SMS-Verification]</title>
 
 @stop
 
