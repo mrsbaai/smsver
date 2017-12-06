@@ -5,13 +5,13 @@
 @section('head')
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="Receive SMS Online" />
+    <meta property="og:title" content="SMS-Verification" />
     <meta property="og:type" content="WebSite" />
-    <meta property="og:description" content="Receive SMS Online. Use our online numbers with your online registrations. Avoid any unwanted messages on your personal cellphone." />
-    <meta property="og:site_name" content="Receive-SMS" />
-    <meta name="keywords" content="receive, sms, online">
-    <meta name="description" content="Receive SMS Online. Use our online numbers with your online registrations. Avoid any unwanted messages on your personal cellphone.">
-    <title>Receive SMS Online</title>
+    <meta property="og:description" content="Reliable API to Bypass SMS Verification" />
+    <meta property="og:site_name" content="SMS-Verification" />
+    <meta name="keywords" content="sms, verification">
+    <meta name="description" content="Reliable API to Bypass SMS Verification">
+    <title>SMS-Verification</title>
 
 @stop
 
@@ -61,8 +61,6 @@
             @if(count($messages) == 0)
                 <p id="emp">Empty.</p>
             @endif
-            <div class="container-fluid nopadding">
-                <div id="messages-table-container" class="nopadding">
                     <div id="no-more-tables">
 
 
@@ -93,9 +91,9 @@
 
 
                     </div>
-                </div>
+
                 <center>{{ $messages->links() }}</center>
-            </div>
+
 
         </div>
     </div>
