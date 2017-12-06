@@ -61,7 +61,7 @@
             @if(count($messages) == 0)
                 <p id="emp">Empty.</p>
             @endif
-                    <div id="no-more-tables">
+                    <div id="table-responsive">
 
 
                         <table id="messages-table" class="col-md-12 table messages-table table-condensed cf">
