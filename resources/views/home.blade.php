@@ -61,7 +61,9 @@
             @if(count($messages) == 0)
                 <p id="emp">Empty.</p>
             @endif
-                    <div id="table-responsive container-fluid nopadding">
+            <div class="container-fluid nopadding">
+                <div id="messages-table-container" class="nopadding">
+                    <div id="no-more-tables">
 
 
                         <table id="messages-table" class="col-md-12 table messages-table table-condensed cf">
@@ -91,9 +93,9 @@
 
 
                     </div>
-
+                </div>
                 <center>{{ $messages->links() }}</center>
-
+            </div>
 
         </div>
     </div>
