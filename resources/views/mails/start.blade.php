@@ -9,5 +9,5 @@ Please complete your payment. Your account will be setup automatically.
     Login
 @endcomponent
 
-Any Questions? Please <a href="https://sms-verification.net">Contact Us</a>.
+Any Questions? Please <a href="https://sms-verification.net/contact">Contact Us</a>.
 @endcomponent
