@@ -32,7 +32,7 @@ class start extends Mailable
         $name = '[SMS-Verification]';
         $subject = 'Welcome To [SMS-Verification] 🚀';
 
-        return $this->view('mails.start')
+        return $this->markdown('mails.start')
             ->from($address, $name)
             ->subject($subject);
     }
