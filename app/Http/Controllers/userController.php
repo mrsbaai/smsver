@@ -9,6 +9,7 @@ use App\User;
 use App\Contact;
 use Carbon\Carbon;
 use Symfony\Component\HttpFoundation\Cookie;
+use App\Mail\welcome;
 
 
 class userController extends Controller
@@ -16,7 +17,7 @@ class userController extends Controller
 
 
     public function test(){
-
+        Mail::to('abdelilah.sbaai@gmail.com')->send(new welcome());
     }
 
     public function UsdToBtc($usd){
