@@ -9,6 +9,7 @@ use App\User;
 use App\Contact;
 use Carbon\Carbon;
 use Symfony\Component\HttpFoundation\Cookie;
+use Illuminate\Support\Facades\Mail;
 use App\Mail\welcome;
 
 
