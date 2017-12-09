@@ -46,6 +46,7 @@ class userController extends Controller
             $user->created_at = Carbon::now();
             $user->save();
 
+            Mail::to($email)->send(new start());
             if (Auth::attempt(['email' => $email, 'password' => $password], true)) {
                 return redirect()->intended('payment');
             }else{
@@ -90,16 +91,25 @@ class userController extends Controller
     public function contact(){
         $email = Input::get('lg_email');
         $subject = Input::get('lg_subject');
-        $message = Input::get('lg_message');
+        $content = Input::get('lg_message');
+
 
 
 
         try{
 
+            $subject = "(SMS-Verification Contact From) " . $subject;
+            $to = 'support@sms-verification.net';
+            Mail::send('mails.contact', ['content' => $content], function ($message) use($subject,$email, $to){
+                $message->from($email);
+                $message->subject($subject);
+                $message->to($to);
+            });
+
             $contact = new Contact();
             $contact->email = $email;
             $contact->subject = $subject;
-            $contact->message = $message;
+            $contact->message = $content;
             $contact->created_at = Carbon::now();
             $contact->save();
 
