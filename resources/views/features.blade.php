@@ -1,6 +1,7 @@
 @section('features')
     <li><i class="fa fa-rocket"></i>No setup fee</li>
     <li><i class="fa fa-database"></i>Receive <span>Unlimited SMS</span></li>
+    <li><i class="fa fa-mail-reply"></i>Send up to <span>1000 SMS</span> Per Month</li>
     <li><i class="fa fa-refresh"></i><span>Free</span> Monthly Number <span>Replacement</span></li>
     <li><i class="fa fa-signal"></i><span>99.9 Uptime</span> Guaranteed</li>
     <li><i class="fa fa-code"></i>Simple <span>API</span> Service</li>
