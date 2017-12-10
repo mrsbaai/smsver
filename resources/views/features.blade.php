@@ -19,7 +19,7 @@
     <li><i class="fa fa-gear"></i>Fully <span>Automated</span> System</li>
     <li><i class="fa fa-inbox"></i>Manage <span>Incoming SMS</span> In <span>Inbox</span></li>
     <li><i class="fa fa-mail-reply"></i>Send up to <span>1000 SMS</span> Per Month</li>
-    <li><i class="fa fa-refresh"></i><span>Free</span> Monthly Number <span>Replacement</span></li>
+    <li><i class="fa fa-refresh"></i>Free <span>Monthly</span> Number <span>Replacement</span></li>
     <li><i class="fa fa-paper-plane"></i>SMS To Email <span>Forwarding</span></li>
 @stop
 
@@ -34,6 +34,6 @@
     <li><i class="fa fa-gear"></i>Fully <span>Automated</span> System</li>
     <li><i class="fa fa-inbox"></i>Manage <span>Incoming SMS</span> In <span>Inbox</span></li>
     <li><i class="fa fa-mail-reply"></i>Send up to <span>5000 SMS</span> Per Month</li>
-    <li><i class="fa fa-refresh"></i><span>Free</span> Daily Number <span>Replacement</span></li>
+    <li><i class="fa fa-refresh"></i>Free <span>Daily</span> Number <span>Replacement</span></li>
     <li><i class="fa fa-paper-plane"></i>SMS To Email <span>Forwarding</span></li>
 @stop
