@@ -38,7 +38,7 @@
                                 <div class="pricing-list">
                                     <ul>
                                         <li><span class="numbers"><i class="fa fa-mobile-phone"></i>200 Numbers</span></li>
-                                        @yield('features')
+                                        @yield('features1')
                                     </ul>
                                 </div>
 
@@ -58,7 +58,7 @@
                                 <div class="pricing-list">
                                     <ul>
                                         <li><span class="numbers"><i class="fa fa-mobile-phone"></i>500 Numbers</span></li>
-                                        @yield('features')
+                                        @yield('features2')
                                     </ul>
                                 </div>
 
@@ -78,7 +78,7 @@
                                 <div class="pricing-list">
                                     <ul>
                                         <li><span class="numbers"><i class="fa fa-mobile-phone"></i>1000 Numbers</span></li>
-                                        @yield('features')
+                                        @yield('features3')
                                     </ul>
                                 </div>
 
