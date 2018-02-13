@@ -30,7 +30,7 @@ class pagesController extends Controller
     public function plan(){
         return view('plan');
     }
-    public function upgrading(){
+    public function dashboard(){
         return view('setup');
     }
 

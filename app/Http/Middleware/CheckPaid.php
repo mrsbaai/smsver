@@ -19,7 +19,7 @@ class CheckPaid
         if (Auth::check()){
             $user = Auth::user();
             if ($user->is_paid == true){
-                return redirect('/upgrading');
+                return redirect('/dashboard');
             }
         }
 

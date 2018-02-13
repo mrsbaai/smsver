@@ -16,7 +16,7 @@ use App\Http\Middleware\CheckPaid;
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
 Route::get('/','pagesController@home')->middleware(CheckPaid::class);
-Route::get('/upgrading','pagesController@upgrading');
+Route::get('/dashboard','pagesController@dashboard');
 Route::get('/api','pagesController@api')->middleware(CheckPaid::class);
 
 Route::get('/payment/{plan?}/','userController@showPayment')->middleware(CheckPaid::class);

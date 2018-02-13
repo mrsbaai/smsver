@@ -14,7 +14,7 @@
 
     <div class="container col-sm-12 text-center" style="padding:70px;">
 
-        <h1>Thank you for your payment!<br/>We will setup your account withing <b>72 hours</b>, and contact you by email.</h1>
+        <h1>Thank you for your payment!<br/><br/>We will setup your account withing <b>72 hours</b>, and contact you by email.</h1>
     </div>
 
 
