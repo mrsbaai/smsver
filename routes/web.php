@@ -10,20 +10,28 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Middleware\CheckPaid;
+
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
-Route::get('/','pagesController@home');
+Route::get('/','pagesController@home')->middleware(CheckPaid::class);
+Route::get('/upgrading','pagesController@upgrading');
+Route::get('/api','pagesController@api')->middleware(CheckPaid::class);
 
-Route::get('/api','pagesController@api');
+Route::get('/payment/{plan?}/','userController@showPayment')->middleware(CheckPaid::class);
 
-Route::get('/payment/{plan?}','userController@showPayment');
+Route::get('/plan','pagesController@plan')->middleware(CheckPaid::class);
 
-Route::get('/plan','pagesController@plan');
+Route::get('/type','userController@showChooseType')->middleware(CheckPaid::class);
 
-Route::get('/terms','pagesController@terms');
+Route::get('/paypal','userController@redirectToPayPal')->middleware(CheckPaid::class);
+Route::get('/bitcoin','userController@redirectToBitcoin')->middleware(CheckPaid::class);
 
-Route::get('/privacy','pagesController@privacy');
+Route::get('/terms','pagesController@terms')->middleware(CheckPaid::class);
+Route::get('/thankyou','userController@thankyou')->middleware(CheckPaid::class);
+
+Route::get('/privacy','pagesController@privacy')->middleware(CheckPaid::class);
 
 Route::get('/login','pagesController@login');
 

@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     protected $fillable = [
-        'email', 'password', 'created_at'
+        'email', 'password', 'is_payed', 'created_at'
     ];
 
     protected $table = "users";

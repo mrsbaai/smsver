@@ -119,7 +119,7 @@
             <div class="col-lg-4">
                 <img class="rounded-circle" src="/img/anonymous.png" alt="Generic placeholder image" width="140" height="140">
                 <h2>ANONYMOUS</h2>
-                <p>We never ask for any personal information and we only accept Bitcoin payments.</p>
+                <p>We never ask for any personal information.</p>
 
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
@@ -133,8 +133,10 @@
     </div>
 
     <div class="col-lg-12 text-center" style="padding-top: 100px;">
-        <a href="/pricing"><img src="/img/btc.png" alt="Bitcoin Accepted Here" style="max-height: 70px;"></a>
+        <a href="/pricing"><img src="/img/btc.png" alt="Bitcoin Accepted Here" style="max-height: 70px; margin:30px;"></a>
+        <a href="/pricing"><img src="/img/pp.png" alt="PayPal Accepted Here" style="max-height: 70px; margin:30px;"></a>
     </div>
+
 
     </div>
 

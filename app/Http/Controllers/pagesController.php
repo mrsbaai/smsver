@@ -30,6 +30,9 @@ class pagesController extends Controller
     public function plan(){
         return view('plan');
     }
+    public function upgrading(){
+        return view('setup');
+    }
 
     public function logout(){
 

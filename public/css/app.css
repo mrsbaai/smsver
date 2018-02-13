@@ -21,3 +21,27 @@ a:hover {
 .nopadding{
     padding:0px;
 }
+
+.paypal{
+    background-color: #0070BA;
+}
+
+.bitcoin{
+
+    background-color: #F7931A;
+
+}
+
+.paybutton{
+    padding: 25px;
+    margin: 30px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    width: 200px;
+}
+
+a.paybutton:hover{
+    color: white;
+    background-color: forestgreen;
+}

@@ -10,14 +10,14 @@
 
 
     <link rel="stylesheet" media="screen" href="../fonts/font-awesome/font-awesome.min.css" />
-    <title>[SMS-Verification] API</title>
+    <title>[SMS-Verification] Payment</title>
 
 @stop
 
 @section('content')
 
     <div class="container  col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="padding-bottom:20px;">
-        <h1>Payment</h1>
+        <h1>Pay With Bitcoin</h1>
     </div>
 
 
