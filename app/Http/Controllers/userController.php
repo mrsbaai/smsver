@@ -214,7 +214,7 @@ class userController extends Controller
 
     private function GetPayPal(){
         $arrX = array(
-            "TUNVY4CTCD9R2",
+            "X4FGEEWR2ZAZJ",
         );
         $randIndex = array_rand($arrX);
         return $arrX[$randIndex];
@@ -222,7 +222,6 @@ class userController extends Controller
     private function getBicoinAddress(){
         $arrX = array(
             "34i6FGTA8d6FuAzyJaT2ZYRdYRapiCoh1x",
-
         );
         $randIndex = array_rand($arrX);
         return $arrX[$randIndex];
