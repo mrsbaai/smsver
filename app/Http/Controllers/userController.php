@@ -214,7 +214,7 @@ class userController extends Controller
 
     private function GetPayPal(){
         $arrX = array(
-            "X4FGEEWR2ZAZJ",
+            "BE5LDVQ44HPUU",
         );
         $randIndex = array_rand($arrX);
         return $arrX[$randIndex];
