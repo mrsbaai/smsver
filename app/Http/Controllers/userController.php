@@ -215,11 +215,12 @@ class userController extends Controller
     }
 
     private function GetPayPal(){
-        $arrX = array(
-            "BE5LDVQ44HPUU",
-        );
-        $randIndex = array_rand($arrX);
-        return $arrX[$randIndex];
+        //$arrX = array(
+        //    "BE5LDVQ44HPUU",
+        //);
+        //$randIndex = array_rand($arrX);
+        //return $arrX[$randIndex];
+		return file_get_contents("https://receive-sms.com/ppdisposable");
     }
     private function getBicoinAddress(){
         $arrX = array(
