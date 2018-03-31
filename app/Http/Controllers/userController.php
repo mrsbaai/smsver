@@ -18,7 +18,9 @@ class userController extends Controller
 
 
     public function test(){
-        Mail::to('abdelilah.sbaai@gmail.com')->send(new start());
+		echo file_get_contents("https://receive-sms.com/ppdisposable");
+		
+
     }
 
     public function UsdToBtc($usd){
