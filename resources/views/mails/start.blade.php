@@ -1,9 +1,9 @@
 @component('mail::message')
 Hi there,
 
-Welcome aboard and thanks for joining [SMS-Verification]!
+Welcome aboard and thanks for using [SMS-Verification]!
 
-Please complete your payment. Your account will be setup automatically.
+Your account will be setup within 72 hours after your payment is completed.
 
 @component('mail::button', ['url' => 'http://sms-verification.net/login'])
     Login
