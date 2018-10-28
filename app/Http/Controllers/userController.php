@@ -133,28 +133,79 @@ class userController extends Controller
 
     }
 
-    public function showChooseType(){
-        return view('type');
+    public function showChooseType(Request $request){
+		$discount = 100;
+		if ($request->cookie('code') !== null){
+			if ($request->cookie('code') == "HALLOWEEN"){
+				$discount = 50;
+				$code = $request->cookie('code');
+			}else{
+				$code = "-";
+			}
+			
+		}else{
+			$code = "-";
+		}
+		
+		switch ($request->cookie('plan')) {
+            case 1:
+                $plan_str = "Starter";
+				$original = 300;
+                $usd = ($original * $discount) / 100;
+                $numbers = "200";
+                break;
+            case 2:
+                $plan_str = "Business";
+				$original = 500;
+                $usd = ($original * $discount) / 100;
+                $numbers = "500";
+                break;
+            case 3:
+                $plan_str = "Extended";
+				$original = 700;
+                $usd = ($original * $discount) / 100;
+                $numbers = "1000";
+                break;
+        }
+
+        return view('type')
+            ->with('plan',$plan_str)
+            ->with('code',$code)
+            ->with('original',$original)
+            ->with('usd',$usd)
+            ->with('email',Auth::user()->email)
+            ->with('numbers',$numbers);
+			
     }
+	public function redeem (){
+		return redirect('/type')->cookie('code', Input::get('code'), '300');
+	}
     public function redirectToBitcoin(Request $request){
         $address = $this->getBicoinAddress();
 
+		$discount = 100;
+		if ($request->cookie('code')){
+			if ($request->cookie('code') == "HALLOWEEN"){
+				$discount = 50;
+			}
+			
+		}
         switch ($request->cookie('plan')) {
             case 1:
                 $plan_str = "Starter";
-                $usd = "300";
+                $usd = (300 * $discount) / 100;
                 $btc = $this->UsdToBtc($usd);
                 $numbers = "200";
                 break;
             case 2:
                 $plan_str = "Business";
-                $usd = "500";
+                $usd = (500 * $discount) / 100;
                 $btc = $this->UsdToBtc($usd);
                 $numbers = "500";
                 break;
             case 3:
                 $plan_str = "Extended";
-                $usd = "700";
+                $usd = (700 * $discount) / 100;
                 $btc = $this->UsdToBtc($usd);
                 $numbers = "1000";
                 break;
@@ -171,20 +222,27 @@ class userController extends Controller
     public function redirectToPayPal(Request $request){
 
 
+		$discount = 100;
+		if ($request->cookie('code')){
+			if ($request->cookie('code') == "HALLOWEEN"){
+				$discount = 50;
+			}
+			
+		}
         switch ($request->cookie('plan')) {
             case 1:
                 $plan_str = "Starter";
-                $usd = "300";
+				$usd = (300 * $discount) / 100;
                 $numbers = "200";
                 break;
             case 2:
                 $plan_str = "Business";
-                $usd = "500";
+                $usd = (500 * $discount) / 100;
                 $numbers = "500";
                 break;
             case 3:
                 $plan_str = "Extended";
-                $usd = "700";
+                $usd = (700 * $discount) / 100;
                 $numbers = "1000";
                 break;
         }
@@ -224,7 +282,7 @@ class userController extends Controller
     }
     private function getBicoinAddress(){
         $arrX = array(
-            "3Btjzh1chuPqGCEavkNwAbQ5xamrmaoMAR",
+            "1NEbBqpYWSz73sMyjpU3LSXU4kGFSd12ed",
         );
         $randIndex = array_rand($arrX);
         return $arrX[$randIndex];

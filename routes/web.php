@@ -26,6 +26,7 @@ Route::get('/payment/{plan?}/','userController@showPayment')->middleware(CheckPa
 Route::get('/plan','pagesController@plan')->middleware(CheckPaid::class);
 
 Route::get('/type','userController@showChooseType')->middleware(CheckPaid::class);
+Route::post('/type','userController@redeem')->middleware(CheckPaid::class);
 
 Route::get('/paypal','userController@redirectToPayPal')->middleware(CheckPaid::class);
 Route::get('/bitcoin','userController@redirectToBitcoin')->middleware(CheckPaid::class);
