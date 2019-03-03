@@ -22,7 +22,7 @@
 
 
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="{{ URL::asset('css/auth.css') }}">
 
 
     @yield('head')
