@@ -60,7 +60,7 @@
             <h3>Inbound Messages - <span style="font-size:70%">(Refresh to see latest)</span></h3>
             @if(count($messages) == 0)
                 <p id="emp">Empty.</p>
-            @endif
+            @else
             <div class="container-fluid nopadding">
                 <div id="messages-table-container" class="nopadding">
                     <div id="no-more-tables">
@@ -96,6 +96,7 @@
                 </div>
                 <center>{{ $messages->links() }}</center>
             </div>
+			@endif
 
         </div>
     </div>
