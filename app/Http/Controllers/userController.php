@@ -136,8 +136,8 @@ class userController extends Controller
     public function showChooseType(Request $request){
 		$discount = 100;
 		if ($request->cookie('code') !== null){
-			if ($request->cookie('code') == "HALLOWEEN"){
-				$discount = 50;
+			if ($request->cookie('code') == "15OFF"){
+				$discount = 15;
 				$code = $request->cookie('code');
 			}else{
 				$code = "-";
