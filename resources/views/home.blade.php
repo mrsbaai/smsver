@@ -134,8 +134,8 @@
     </div>
 
     <div class="col-lg-12 text-center" style="padding-top: 100px;">
-        <a href="/pricing"><img src="/img/btc.png" alt="Bitcoin Accepted Here" style="max-height: 40px; margin:20px;"></a>
-        <a href="/pricing"><img src="/img/pp.png" alt="PayPal Accepted Here" style="max-height: 40px; margin:20px;"></a>
+        <a href="/pricing"><img src="/img/we-accept.png"style="max-height: 150px;"></a>
+        
     </div>
 
 
