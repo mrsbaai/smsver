@@ -138,7 +138,7 @@
 
 
     <div class="col-lg-12 text-center" style="padding-top: 70px;">
-        <a href="/getstarted" type="button" class="btn btn-lg btn-primary">Get Started Now!</a>
+        <a href="/getstarted" type="button" class="btn btn-lg btn-primary" style="padding: 25px; margin: 25px;">Get Started Now!</a>
     </div>
 
     <div class="col-lg-12 text-center" style="padding-top: 100px;">
