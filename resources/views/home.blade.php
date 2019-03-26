@@ -27,15 +27,15 @@
 		padding: 0.64286em 0.85714em 0.53571em;
 		color: #fff;
 		font: 400 30px/1 “proxima-nova”, ‘Open Sans’, Helvetica, sans-serif;
-		background: #007f9d;
+		background: #008fb0;
 		z-index: 3;
 		border-radius: 6px;
 		box-shadow: 0 6px 0 #009FC4,0 6px 3px rgba(0,0,0,0.4);
 	}
 	.converter a:hover, .converter a:focus {
 		color: #fff;
-		background: #57972d;
-		box-shadow: 0 6px 0 #009FC4,0 6px 3px rgba(0,0,0,0.4);
+		background: #007f9d;
+		box-shadow: 0 6px 0 #007f9d,0 6px 3px rgba(0,0,0,0.4);
 	}
 	
 	
