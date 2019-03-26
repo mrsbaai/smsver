@@ -14,11 +14,11 @@
     <title>[SMS-Verification]</title>
 	<style>
 	.converter a {
-		background: -webkit-linear-gradient(90deg, #009FC4 10%, #FFFFFF 90%);
-		background: -moz-linear-gradient(90deg, #009FC4 10%, #FFFFFF 90%);
-		background: -ms-linear-gradient(90deg, #009FC4 10%, #FFFFFF 90%);
-		background: -o-linear-gradient(90deg, #009FC4 10%, #FFFFFF 90%);
-		background: linear-gradient(90deg, #009FC4 10%, #FFFFFF 90%);
+		background: -webkit-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+		background: -moz-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+		background: -ms-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+		background: -o-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+		background: linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
 		padding: 23px 37px;
 		border-radius: 5px;
 		color: #333;
@@ -27,7 +27,7 @@
 		padding: 0.64286em 0.85714em 0.53571em;
 		color: #fff;
 		font: 400 30px/1 “proxima-nova”, ‘Open Sans’, Helvetica, sans-serif;
-		background: #518d2a;
+		background: #009FC4;
 		z-index: 3;
 		border-radius: 6px;
 		box-shadow: 0 6px 0 #001E6A,0 6px 3px rgba(0,0,0,0.4);
