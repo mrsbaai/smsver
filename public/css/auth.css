@@ -321,5 +321,5 @@ a:hover {
 
 a.paybutton:hover{
     color: white;
-    background-color: forestgreen;
+    opacity: .8; 
 }
