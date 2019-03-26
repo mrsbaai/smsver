@@ -76,7 +76,7 @@
     <div class="container col-xs-12 col-sm-12 col-lg-12 col-md-12">
         @yield('content')
     </div>
-
+<br/><br/><br/> <br/>
 
     <div class="container col-xs-12 col-sm-12 col-lg-12 col-md-12 text-center" style="padding-top:70px;padding-bottom:30px; background-color: white;">
         <a  href="/">SMS-Verification.net</a> &copy; 2019
