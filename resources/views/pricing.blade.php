@@ -94,7 +94,7 @@
 
 		<br/><br/><br/>
 		<center>
-		<img  src="/img/world_2.jpg" ></center>
+		<img  style = "border: 1px solid #e3e3e3;" src="/img/world_2.png" ></center>
 	<br/><br/><br/>
 	
 			<center><img  src="/img/back.png"  width="150" height="150"></center>
