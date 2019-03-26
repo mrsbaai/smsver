@@ -78,7 +78,7 @@
     </div>
 
 
-    <div class="container col-xs-12 col-sm-12 col-lg-12 col-md-12 text-center" style="padding-0px; margin:0px;padding-top:120px;padding-bottom:30px;">
+    <div class="container col-xs-12 col-sm-12 col-lg-12 col-md-12 text-center" style="padding:0px; margin:0px;padding-top:120px;">
         <div style="padding:0px;padding-top:30px;margin:0px; background-color: white;">
 		<a  href="/">SMS-Verification.net</a> &copy; 2019
         @if(!Auth::check())
