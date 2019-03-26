@@ -77,15 +77,9 @@
         @yield('content')
     </div>
 
-<footer class="page-footer font-small white pt-4">
 
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
-
-      <!-- Grid row -->
-      <div class="row">
-	  
-	  
+    <div class="container col-xs-12 col-sm-12 col-lg-12 col-md-12 text-center" style="padding-top:120px;padding-bottom:30px; background-color: white;">
+        <div style="padding:20px;margin:0px; background-color: white;">
 		<a  href="/">SMS-Verification.net</a> &copy; 2019
         @if(!Auth::check())
             -
@@ -102,7 +96,6 @@
 		</div>
 
     </div>
-</footer>
 
 
 
