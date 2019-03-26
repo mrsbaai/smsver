@@ -85,16 +85,12 @@
 			
 			<a href="/paypal" class="btn btn-lg paybutton paypal"><span><i class="fa fa-paypal"></i> PayPal </span></a>
 			<a href="/bitcoin" class="btn btn-lg paybutton bitcoin"><span><i class="fa fa-bitcoin"></i> Bitcoin </span></a>
-
-		</div>
-		<br/><br/><br/>
-		<div class="row">
-            <div class="col-lg-12">
+<br/><br/><br/>
 				<center>
 					<img  src="/img/back.png"  width="110" height="110">
 				</center>
-			</div>
 		</div>
+
 
         
         </div>
