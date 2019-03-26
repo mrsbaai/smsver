@@ -89,14 +89,14 @@
             <a  href="/contact">Contact</a> |
             <a  href="/register">Register</a> |
             <a  href="/login">Login</a>
+		<br/><br/><br/>    
+		 <a href="/pricing"><img src="/img/we-accept.png"style="max-height: 80px;"></a>
         @endif
+
     </div>
 
-	<br/><br/><br/>    
-	<div class="col-lg-12 text-center" style="padding-top: 100px;">
-        <a href="/pricing"><img src="/img/we-accept.png"style="max-height: 80px;"></a>
-       
-    </div>
+
+
 
 
 

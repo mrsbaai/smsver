@@ -19,7 +19,7 @@
 		background: -ms-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
 		background: -o-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
 		background: linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
-		padding: 13px 27px;
+		padding: 23px 37px;
 		border-radius: 5px;
 		color: #333;
 		display: inline-block;
@@ -171,7 +171,7 @@
 
 
     <div class="col-lg-12 text-center" style="padding-top: 70px;">
-	<div class="converter"><a href="/getstarted"> Get started! </a></div>  
+	<div class="converter"><a href="/getstarted"> Get Started! </a></div>  
     </div>
 
 
