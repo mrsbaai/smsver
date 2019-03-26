@@ -78,8 +78,8 @@
     </div>
 
 
-    <div id="footer" class="container-fluid" style="background-color: white;">
-        <div class="row">
+    <div class="container col-xs-12 col-sm-12 col-lg-12 col-md-12 text-center container-fluid" style="padding:0px; margin:0px;padding-top:120px;">
+        <div class = "row" style="background-color: white;">
 		<a  href="/">SMS-Verification.net</a> &copy; 2019
         @if(!Auth::check())
             -
