@@ -93,7 +93,10 @@
     </div>
 
 		<br/><br/><br/>
-		<center><img  src="/img/world_2.jpg" ></center>
+				<center>
+			<div style="border: 1px solid #e3e3e3; padding: 10 px; background-color:white;">
+		<img  src="/img/world_2.jpg" >
+		</div>
 
 	<br/><br/><br/>
 			<center><img  src="/img/back.png"  width="150" height="150"></center>
