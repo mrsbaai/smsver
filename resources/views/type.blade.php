@@ -82,8 +82,8 @@
 		<div class="container marketing col-sm-12 text-center">
 			<h3 class="mb-3">Please Choose A Payment Method:</h3>
 			
-			<a href="/paypal" class="btn btn-lg paybutton paypal"><i class="fa fa-paypal"></i> PayPal</a>
-			<a href="/bitcoin" class="btn btn-lg paybutton bitcoin"><i class="fa fa-bitcoin"></i> Bitcoin</a>
+			<a href="/paypal" class="btn btn-md paybutton paypal"><i class="fa fa-paypal"></i> PayPal</a>
+			<a href="/bitcoin" class="btn btn-md paybutton bitcoin"><i class="fa fa-bitcoin"></i> Bitcoin</a>
 
 		</div>
 
