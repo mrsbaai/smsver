@@ -142,7 +142,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <img class="rounded-circle" src="/img/cheap.png" alt="Generic placeholder image" width="140" height="140">
-                <h2>Cheap</h2>
+                <h2>CHEAP</h2>
                 <p>Dirt cheap numbers with the ability to replace every month</p>
 
             </div><!-- /.col-lg-4 -->
