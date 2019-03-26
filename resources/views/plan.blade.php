@@ -94,8 +94,9 @@
     </div>
 
 		<br/><br/><br/>
-		..
-
+		<center>
+		<img  src="/img/world_2.jpg" >
+		</center>
 	<br/><br/><br/>
 	
 			<center>
