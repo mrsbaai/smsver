@@ -92,7 +92,8 @@
 
     </div>
 
-
+		<br/><br/><br/>
+		<center><img  src="/img/world_2.png" ></center>
 
 	<br/><br/><br/>
 			<center><img  src="/img/back.png"  width="150" height="150"></center>

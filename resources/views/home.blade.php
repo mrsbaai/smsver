@@ -20,6 +20,8 @@
     <div class="container col-sm-12 col-md-12 col-lg-12 text-center" style="padding-bottom:70px;">
         <h1>SMS-Verification</h1>
         <h3 >A simple API service to bypass SMS verification anywhere</h3>
+		<br/><br/><br/>
+		<center><img  src="/img/world_1.png" ></center>
     </div>
 
     <div class="container width-fix col-sm-12">
