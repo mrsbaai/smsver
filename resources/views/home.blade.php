@@ -174,10 +174,7 @@
 	<div class="converter"><a href="/getstarted"> Get started! </a></div>  
     </div>
 
-    <div class="col-lg-12 text-center" style="padding-top: 100px;">
-        <a href="/pricing"><img src="/img/we-accept.png"style="max-height: 150px;"></a>
-        
-    </div>
+
 
 
     </div>
