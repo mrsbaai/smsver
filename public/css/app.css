@@ -24,16 +24,19 @@ a:hover {
 
 .paypal{
     background-color: #0070BA;
+	    opacity: .8; 
 }
 
 .bitcoin{
 
     background-color: #F7931A;
+	    opacity: .8; 
 
+}
 }
 
 .paybutton{
-    padding: 25px;
+    padding: 15px;
     margin: 30px;
     font-size: x-large;
     font-weight: bold;
@@ -43,5 +46,5 @@ a:hover {
 
 a.paybutton:hover{
     color: white;
-    background-color: forestgreen;
+    opacity: 1; 
 }
