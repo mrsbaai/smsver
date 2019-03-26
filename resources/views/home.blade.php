@@ -35,7 +35,7 @@
 	.converter a:hover, .converter a:focus {
 		color: #fff;
 		background: #007f9d;
-		box-shadow: 0 6px 0 #007f9d,0 6px 3px rgba(0,0,0,0.4);
+		box-shadow: 0 6px 0 #009FC4,0 6px 3px rgba(0,0,0,0.4);
 	}
 	
 	
