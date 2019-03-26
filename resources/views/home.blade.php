@@ -41,7 +41,7 @@
 	
 	.converter a:active {
 		top: 6px;
-		box-shadow: 0 0px 0 #001856,0 0 0 rgba(0,0,0,0.4);
+		box-shadow: 0 0px 0 #009FC4,0 0 0 rgba(0,0,0,0.4);
 	}
 	</style>
 
