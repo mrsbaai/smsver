@@ -93,10 +93,11 @@
     </div>
 
 		<br/><br/><br/>
-			
-			<div style="border: 1px solid #e3e3e3; padding: 10 px; background-color:white;">
+			<center>
+			<div class="container container-fluid" style="border: 1px solid #e3e3e3; padding: 10 px; background-color:white;">
 		<img  src="/img/world_2.jpg" >
 		</div>
+		</center>
 		
 
 	<br/><br/><br/>
