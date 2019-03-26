@@ -14,11 +14,11 @@
     <title>[SMS-Verification]</title>
 	<style>
 	.converter a {
-		background: -webkit-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
-		background: -moz-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
-		background: -ms-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
-		background: -o-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
-		background: linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+		background: -webkit-linear-gradient(90deg, #009FC4 10%, #FFFFFF 90%);
+		background: -moz-linear-gradient(90deg, #009FC4 10%, #FFFFFF 90%);
+		background: -ms-linear-gradient(90deg, #009FC4 10%, #FFFFFF 90%);
+		background: -o-linear-gradient(90deg, #009FC4 10%, #FFFFFF 90%);
+		background: linear-gradient(90deg, #009FC4 10%, #FFFFFF 90%);
 		padding: 23px 37px;
 		border-radius: 5px;
 		color: #333;
@@ -30,18 +30,18 @@
 		background: #518d2a;
 		z-index: 3;
 		border-radius: 6px;
-		box-shadow: 0 6px 0 #3e6c20,0 6px 3px rgba(0,0,0,0.4);
+		box-shadow: 0 6px 0 #001E6A,0 6px 3px rgba(0,0,0,0.4);
 	}
 	.converter a:hover, .converter a:focus {
 		color: #fff;
 		background: #57972d;
-		box-shadow: 0 6px 0 #3e6c20,0 6px 3px rgba(0,0,0,0.4);
+		box-shadow: 0 6px 0 #001E6A,0 6px 3px rgba(0,0,0,0.4);
 	}
 	
 	
 	.converter a:active {
 		top: 6px;
-		box-shadow: 0 0px 0 #3e6c20,0 0 0 rgba(0,0,0,0.4);
+		box-shadow: 0 0px 0 #0099DF,0 0 0 rgba(0,0,0,0.4);
 	}
 	</style>
 
