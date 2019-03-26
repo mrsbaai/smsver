@@ -26,7 +26,7 @@
 		position: relative;
 		padding: 0.64286em 0.85714em 0.53571em;
 		color: #fff;
-		font: 400 30px/1 “proxima-nova”, ‘Open Sans’, Helvetica, sans-serif;
+		font: 400 35px/1 “proxima-nova”, ‘Open Sans’, Helvetica, sans-serif;
 		background: #008fb0;
 		z-index: 3;
 		border-radius: 6px;
