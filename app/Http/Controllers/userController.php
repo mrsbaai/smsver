@@ -185,27 +185,27 @@ class userController extends Controller
 
 		$discount = 100;
 		if ($request->cookie('code')){
-			if ($request->cookie('code') == "HALLOWEEN"){
-				$discount = 50;
+			if ($request->cookie('code') == "15OFF"){
+				$discount = 15;
 			}
 			
 		}
         switch ($request->cookie('plan')) {
             case 1:
                 $plan_str = "Starter";
-                $usd = (300 * $discount) / 100;
+                $usd = 300 - (300 * $discount) / 100;
                 $btc = $this->UsdToBtc($usd);
                 $numbers = "200";
                 break;
             case 2:
                 $plan_str = "Business";
-                $usd = (500 * $discount) / 100;
+                $usd = 500 - (500 * $discount) / 100;
                 $btc = $this->UsdToBtc($usd);
                 $numbers = "500";
                 break;
             case 3:
                 $plan_str = "Extended";
-                $usd = (700 * $discount) / 100;
+                $usd = 700 - (700 * $discount) / 100;
                 $btc = $this->UsdToBtc($usd);
                 $numbers = "1000";
                 break;
@@ -224,25 +224,25 @@ class userController extends Controller
 
 		$discount = 100;
 		if ($request->cookie('code')){
-			if ($request->cookie('code') == "HALLOWEEN"){
-				$discount = 50;
+			if ($request->cookie('code') == "15OFF"){
+				$discount = 15;
 			}
 			
 		}
         switch ($request->cookie('plan')) {
             case 1:
                 $plan_str = "Starter";
-				$usd = (300 * $discount) / 100;
+				$usd = 300 - (300 * $discount) / 100;
                 $numbers = "200";
                 break;
             case 2:
                 $plan_str = "Business";
-                $usd = (500 * $discount) / 100;
+                $usd = 500 - (500 * $discount) / 100;
                 $numbers = "500";
                 break;
             case 3:
                 $plan_str = "Extended";
-                $usd = (700 * $discount) / 100;
+                $usd = 500 - (700 * $discount) / 100;
                 $numbers = "1000";
                 break;
         }
