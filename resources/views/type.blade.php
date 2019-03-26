@@ -79,16 +79,13 @@
         <div class="col-md-8 order-md-2">
 		
 
-		<br/>
+		<br/><br/><br/><br/>
 		<div class="container marketing col-sm-12 text-center">
 			<h3 class="mb-3">Please Choose A Payment Method:</h3>
 			
 			<a href="/paypal" class="btn btn-lg paybutton paypal"><span><i class="fa fa-paypal"></i> PayPal </span></a>
 			<a href="/bitcoin" class="btn btn-lg paybutton bitcoin"><span><i class="fa fa-bitcoin"></i> Bitcoin </span></a>
-<br/><br/><br/>
-				<center>
-					<img  src="/img/back.png"  width="110" height="110">
-				</center>
+
 		</div>
 
 
