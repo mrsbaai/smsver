@@ -77,7 +77,7 @@
 
         </div>
         <div class="col-md-8 order-md-2">
-		<br/>
+		
 
 		<br/><br/>
 		<div class="container marketing col-sm-12 text-center">
@@ -88,7 +88,7 @@
 
 		</div>
 		<br/>
-			<div class="row">
+		<div class="row">
             <div class="col-lg-12">
 				<center>
 					<img  src="/img/back.png"  width="110" height="110">
