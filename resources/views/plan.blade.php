@@ -94,7 +94,7 @@
     </div>
 
 		<br/><br/><br/>
-		<center><img  src="/img/world_2.png" ></center>
+		<center><img  src="/img/world_2.jpg" ></center>
 	<br/><br/><br/>
 			<center><img  src="/img/back.png"  width="150" height="150"></center>
 	<div class="container col-sm-12 text-center">
