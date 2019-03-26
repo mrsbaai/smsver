@@ -12,6 +12,38 @@
     <meta name="keywords" content="sms, verification">
     <meta name="description" content="Reliable API to Bypass SMS Verification">
     <title>[SMS-Verification]</title>
+	<style>
+	.converter a {
+		background: -webkit-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+		background: -moz-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+		background: -ms-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+		background: -o-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+		background: linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
+		padding: 13px 27px;
+		border-radius: 5px;
+		color: #333;
+		display: inline-block;
+		position: relative;
+		padding: 0.64286em 0.85714em 0.53571em;
+		color: #fff;
+		font: 400 20px/1 “proxima-nova”, ‘Open Sans’, Helvetica, sans-serif;
+		background: #518d2a;
+		z-index: 3;
+		border-radius: 6px;
+		box-shadow: 0 6px 0 #3e6c20,0 6px 3px rgba(0,0,0,0.4);
+	}
+	.converter a:hover, .converter a:focus {
+		color: #fff;
+		background: #57972d;
+		box-shadow: 0 6px 0 #3e6c20,0 6px 3px rgba(0,0,0,0.4);
+	}
+	
+	
+	.converter a:active {
+		top: 6px;
+		box-shadow: 0 0px 0 #3e6c20,0 0 0 rgba(0,0,0,0.4);
+	}
+	</style>
 
 @stop
 
@@ -139,7 +171,7 @@
 
 
     <div class="col-lg-12 text-center" style="padding-top: 70px;">
-        <a href="/getstarted" type="button" class="btn btn-lg btn-primary" style="padding: 25px; margin: 25px;">Get Started Now!</a>
+	<div class="converter"><a href="/getstarted"> Get started! </a></div>  
     </div>
 
     <div class="col-lg-12 text-center" style="padding-top: 100px;">
