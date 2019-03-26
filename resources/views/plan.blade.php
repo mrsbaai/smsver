@@ -94,9 +94,20 @@
     </div>
 
 	<br/><br/><br/>
-				<center>
-					<img  src="/img/back.png"  width="140" height="140">
-				</center>
+	<div class="container">
+	<div class = "row">
+	<p>
+	<b>SMS-Verifiction Now Offers a 30-Day Risk-Free Guarantee on ALL Assistive Devices</b><br/>
+	If you're not satisfied, we're not satisfied - so we'll gladly give you your money back on any numbers plan purchase. While we stand behind the numbers we sell, we want you to feel confident in your purchase decision. As of March 9th, 2019, all orders placed online qualify for a 30-Day Risk-Free Guarantee. If you are not happy with your purchase for ANY reason, please contact us within 30-Days and we will gladly work with you to exchange the numbers or process a refund for the full price the purchase. 
+		<center>
+			<img  src="/img/back.png"  width="150" height="150">
+		</center>
+	</p>
+	
+	</div>
+	</div>
+	
+
 
 
 
