@@ -79,7 +79,7 @@
         <div class="col-md-8 order-md-2">
 		
 
-		<br/><br/>
+		<br/>
 		<div class="container marketing col-sm-12 text-center">
 			<h3 class="mb-3">Please Choose A Payment Method:</h3>
 			
@@ -87,7 +87,7 @@
 			<a href="/bitcoin" class="btn btn-lg paybutton bitcoin"><span><i class="fa fa-bitcoin"></i> Bitcoin </span></a>
 
 		</div>
-		<br/>
+		<br/><br/><br/>
 		<div class="row">
             <div class="col-lg-12">
 				<center>
