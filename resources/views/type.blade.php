@@ -78,6 +78,13 @@
         </div>
         <div class="col-md-8 order-md-2">
 		
+		 <div class="row">
+            <div class="col-lg-12">
+				<center>
+					<img  src="/img/back.png">
+				</center>
+			</div>
+		</div>
 		<br/><br/><br/>
 		<div class="container marketing col-sm-12 text-center">
 			<h3 class="mb-3">Please Choose A Payment Method:</h3>
