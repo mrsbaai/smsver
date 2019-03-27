@@ -93,7 +93,7 @@
 
     </div>
 
-
+<br/><br/>
 	
 			<center>
 			<img  src="/img/back.png"  width="150" height="150">

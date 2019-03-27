@@ -175,7 +175,7 @@
     </div>
 	
 	
-	<div class="col-lg-12 text-center" style="padding-top: 70px;">
+	<div class="col-lg-12 text-center" style="padding-top: 100px;">
 		<center>
 		<img  style = "border: 1px solid #e3e3e3;" src="/img/world_2.png" ></center>
 		</center>

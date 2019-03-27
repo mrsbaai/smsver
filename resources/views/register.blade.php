@@ -47,8 +47,8 @@
 
 							
                             <div class="form-group">
-                                <label for="reg_email" class="sr-only">Email</label>
-                                <input type="email" class="form-control" id="reg_email" name="reg_email" placeholder="Email"  required autofocus>
+                                <label for="reg_email" class="sr-only">Email Address</label>
+                                <input type="email" class="form-control" id="reg_email" name="reg_email" placeholder="Email Address"  required autofocus>
                             </div>
 
                             <div class="form-group">
