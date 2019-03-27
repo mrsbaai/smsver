@@ -38,15 +38,15 @@
                     <div class="login-group">
                         <div class="form-group">
                             <label for="lg_email" class="sr-only">Email</label>
-                            <input type="email" class="form-control" id="lg_email" name="lg_email" placeholder="email" required autofocus>
+                            <input type="email" class="form-control" id="lg_email" name="lg_email" placeholder="Your Emaill Address" required autofocus>
                         </div>
                         <div class="form-group">
                             <label for="lg_subject" class="sr-only">Subject</label>
-                            <input type="text" class="form-control" id="lg_subject" name="lg_subject" placeholder="subject" required>
+                            <input type="text" class="form-control" id="lg_subject" name="lg_subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
                             <label for="lg_message" class="sr-only">Message</label>
-                            <textarea class="form-control" id="lg_message" name="lg_message" placeholder="message" required></textarea>
+                            <textarea class="form-control" id="lg_message" name="lg_message" placeholder="Message" required></textarea>
                         </div>
 
                     </div>
