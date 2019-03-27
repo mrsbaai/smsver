@@ -142,25 +142,25 @@
         <div class="row">
             <div class="col-lg-3">
                 <img class="rounded-circle" src="/img/cheap.png" alt="Generic placeholder image" width="140" height="140">
-                <h2>CHEAP</h2>
-                <p>Dirt cheap numbers with the ability to replace every month</p>
+                <h2>It's CHEAP</h2>
+                <p>Cheap numbers with simple inbox.</p>
 
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-3">
                 <img class="rounded-circle"  src="/img/api.png" alt="Generic placeholder image" width="140" height="140">
-                <h2>DEVELOPERS</h2>
-                <p>A reliable API service easy to integrate anywhere.</p>
+                <h2>For DEVELOPERS</h2>
+                <p>Simple and reliable API service for websites and software automation.</p>
 
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-3">
                 <img class="rounded-circle" src="/img/anonymous.png" alt="Generic placeholder image" width="140" height="140">
                 <h2>ANONYMOUS</h2>
-                <p>We never ask for any personal information.</p>
+                <p>We never ask for any personal information. And you can completely delete your account.</p>
 
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-3">
                 <img class="rounded-circle" src="/img/world.png" alt="Generic placeholder image" width="140" height="140">
-                <h2>WORLDWIDE</h2>
+                <h2>And WORLDWIDE</h2>
                 <p>Hosted SIM cards from all around the world.</p>
 
             </div><!-- /.col-lg-4 -->
