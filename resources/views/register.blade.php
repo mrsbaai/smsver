@@ -36,8 +36,8 @@
 
 
 						    <div class="form-group">
-                                <label for="reg_company" class="sr-only">Company</label>
-                                <input type="text" class="form-control" id="reg_company" name="reg_company" placeholder="Company (Optional)" autofocus>
+                                <label for="reg_company" class="sr-only">Company Name</label>
+                                <input type="text" class="form-control" id="reg_company" name="reg_company" placeholder="Company Name (Optional)" autofocus>
                             </div>
 
 						    <div class="form-group">
@@ -60,7 +60,7 @@
                                 <input type="password" class="form-control" id="reg_password_confirm" name="reg_password_confirm" placeholder="Confirm Password" required>
                             </div>
                             <div class="form-group login-group-checkbox">
-                                <input type="checkbox" class="" id="reg_agree" name="reg_agree" required>
+                                <input type="checkbox" class="" id="reg_agree" name="reg_agree" checked required>
                                 <label for="reg_agree">I agree with <a href="/terms">terms</a></label>
                             </div>
 
