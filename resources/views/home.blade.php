@@ -30,12 +30,12 @@
 		background: #D74445;
 		z-index: 3;
 		border-radius: 6px;
-		box-shadow: 0 6px 0 black,0 6px 3px rgba(0,0,0,0.4);
+		box-shadow: 0 6px 0 #181C22,0 6px 3px rgba(0,0,0,0.4);
 	}
 	.converter a:hover, .converter a:focus {
 		color: #fff;
 		background: #c92b2c;
-		box-shadow: 0 6px 0 black,0 6px 3px rgba(0,0,0,0.4);
+		box-shadow: 0 6px 0 #181C22,0 6px 3px rgba(0,0,0,0.4);
 	}
 	
 	
