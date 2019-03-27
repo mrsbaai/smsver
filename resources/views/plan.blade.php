@@ -39,6 +39,8 @@
                                     <ul>
                                         <li><span class="numbers"><i class="fa fa-mobile-phone"></i>200 Numbers</span></li>
                                         @yield('features1')
+										<br/>
+										<a href="/payment/1" class="btn btn-lg btn-success">Get A Free Month</a>
                                     </ul>
                                 </div>
 
