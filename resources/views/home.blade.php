@@ -173,11 +173,16 @@
     <div class="col-lg-12 text-center" style="padding-top: 70px;">
 	<div class="converter"><a href="/getstarted"> Get Started! </a></div>  
     </div>
+	
+	
+	<div class="col-lg-12 text-center" style="padding-top: 70px;">
+		<center>
+		<img  style = "border: 1px solid #e3e3e3;" src="/img/world_2.png" ></center>
+		</center>
+	</div>
 
 
-
-
-    </div>
+   
 
 
 @stop
