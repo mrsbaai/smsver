@@ -37,7 +37,7 @@
     @if(Auth::check())
         <div class="container col-xs-6 col-md-6 text-left" style="padding-top:5px;">
             <div class="btn-group" data-toggle="buttons">
-                <h3  style="margin:0px;padding:0px;"> [SMS-Verification]</h3>
+                <h3  style="margin:0px;padding:0px;"> [SMS-Verification.net]</h3>
                 @if(Auth::check())
                     <medium class="text-muted">Logged as: {{Auth::user()->email}}</medium>
                 @endif
