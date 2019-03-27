@@ -33,7 +33,7 @@ html,
 }
 /*=== 4. Main Form ===*/
 .login-form-1 {
-  max-width: 300px;
+  width: 500px;
   border-radius: 5px;
   display: inline-block;
 }

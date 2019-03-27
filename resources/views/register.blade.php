@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>[SMS-Verification] Register</title>
+<title>[SMS-Verification] Get An Account</title>
 
 @stop
 
@@ -25,7 +25,7 @@
 
         <!-- REGISTRATION FORM -->
         <div class="text-center" style="padding:50px 0">
-            <div class="logo">Register</div>
+            <div class="logo">Get An Account</div>
             <!-- Main Form -->
             <div class="login-form-1">
                 {{ Form::open(array('action' => 'userController@create', 'id' => 'register-form', 'class' => 'text-left'))}}
@@ -35,18 +35,29 @@
                         <div class="login-group">
 
 
+						    <div class="form-group">
+                                <label for="reg_company" class="sr-only">Company</label>
+                                <input type="text" class="form-control" id="reg_company" name="reg_company" placeholder="Company (Optional)" autofocus>
+                            </div>
+
+						    <div class="form-group">
+                                <label for="reg_name" class="sr-only">Full Name</label>
+                                <input type="text" class="form-control" id="reg_name" name="reg_name" placeholder="Full Name (Optional)" autofocus>
+                            </div>
+
+							
                             <div class="form-group">
                                 <label for="reg_email" class="sr-only">Email</label>
-                                <input type="email" class="form-control" id="reg_email" name="reg_email" placeholder="email"  required autofocus>
+                                <input type="email" class="form-control" id="reg_email" name="reg_email" placeholder="Email"  required autofocus>
                             </div>
 
                             <div class="form-group">
                                 <label for="reg_password" class="sr-only">Password</label>
-                                <input type="password" class="form-control" id="reg_password" name="reg_password" placeholder="password" required>
+                                <input type="password" class="form-control" id="reg_password" name="reg_password" placeholder="Password" required>
                             </div>
                             <div class="form-group">
                                 <label for="reg_password_confirm" class="sr-only">Password Confirm</label>
-                                <input type="password" class="form-control" id="reg_password_confirm" name="reg_password_confirm" placeholder="confirm password" required>
+                                <input type="password" class="form-control" id="reg_password_confirm" name="reg_password_confirm" placeholder="Confirm Password" required>
                             </div>
                             <div class="form-group login-group-checkbox">
                                 <input type="checkbox" class="" id="reg_agree" name="reg_agree" required>
