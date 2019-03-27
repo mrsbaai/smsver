@@ -57,9 +57,9 @@
 
     <div class="container width-fix col-sm-12">
         <div class="jumbotron" >
-<br/><br/>
+<! --<br/><br/>
 		<center><img  src="/img/world_1.png" ></center>
-		<br/>
+		<br/> --!>
             <h2>Example:</h2>
             <p>Send SMS Messages to these numbers and see inbound messages below.</p>
 
