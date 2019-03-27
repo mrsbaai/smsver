@@ -27,15 +27,15 @@
 		padding: 0.64286em 0.85714em 0.53571em;
 		color: #fff;
 		font: 400 35px/1 “proxima-nova”, ‘Open Sans’, Helvetica, sans-serif;
-		background: #008fb0;
+		background: #D74445;
 		z-index: 3;
 		border-radius: 6px;
-		box-shadow: 0 6px 0 #009FC4,0 6px 3px rgba(0,0,0,0.4);
+		box-shadow: 0 6px 0 black,0 6px 3px rgba(0,0,0,0.4);
 	}
 	.converter a:hover, .converter a:focus {
 		color: #fff;
-		background: #007f9d;
-		box-shadow: 0 6px 0 #009FC4,0 6px 3px rgba(0,0,0,0.4);
+		background: #982121;
+		box-shadow: 0 6px 0 black,0 6px 3px rgba(0,0,0,0.4);
 	}
 	
 	
