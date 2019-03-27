@@ -24,7 +24,7 @@
         <!-- Where all the magic happens -->
         <!-- LOGIN FORM -->
         <div class="text-center" style="padding:50px 0">
-            <div class="logo">Login</div>
+            <div class="logo">Log in</div>
             <!-- Main Form -->
             <div class="login-form-1">
 
@@ -51,8 +51,8 @@
                     </div>
                     <div class="etc-login-form">
 					<br/>
-                        <p>forgot your password? <a href="/forgot">click here</a></p>
-                        <p>new user? <a href="getstarted">create new account</a></p>
+                        <p>Forgot your password? <a href="/forgot">click here</a></p>
+                        <p>New user? <a href="getstarted">create new account</a></p>
                     </div>
                 {{ Form::close() }}
             </div>
