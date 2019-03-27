@@ -51,8 +51,8 @@
                     </div>
                     <div class="etc-login-form">
 					<br/>
-                        <p>Forgot your password? <a href="/forgot">click here</a></p>
-                        <p>New user? <a href="getstarted">create new account</a></p>
+                        <p>Forgot your password? <a href="/forgot">Click here</a></p>
+                        <p>New user? <a href="getstarted">Create new account</a></p>
                     </div>
                 {{ Form::close() }}
             </div>
