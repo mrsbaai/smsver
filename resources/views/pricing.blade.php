@@ -31,13 +31,15 @@
                                 <div class="pricing-header" style="background-color: #D39D05;">
                                     <p class="pricing-title">Starter Plan</p>
                                     <p class="pricing-rate"><sup>$</sup> 3<span class="smaller">00</span> <span class="small-pricing">/Year.</span></p>
-                                    <a href="/getstarted/1" class="btn btn-custom">And Get Free Month</a>
+                                    <a href="/getstarted/1" class="btn btn-light">Get 1 Free Month</a>
                                 </div>
 
                                 <div class="pricing-list">
                                     <ul>
                                         <li><span class="numbers"><i class="fa fa-mobile-phone"></i>200 Numbers</span></li>
                                         @yield('features1')
+										<br/><br/>
+										<a href="/getstarted/1" class="btn btn-lg btn-success">Get 1 Free Month</a>
                                     </ul>
                                 </div>
 
@@ -51,13 +53,15 @@
                                 <div class="pricing-header"  style="background-color: #7D1E4A;">
                                     <p class="pricing-title">Business Plan</p>
                                     <p class="pricing-rate"><sup>$</sup> 5<span class="smaller">00</span> <span class="small-pricing">/Year.</span></p>
-                                    <a href="/getstarted/2" class="btn btn-custom">And Get Free Month</a>
+                                    <a href="/getstarted/2" class="btn btn-light">Get 1 Free Month</a>
                                 </div>
 
                                 <div class="pricing-list">
                                     <ul>
                                         <li><span class="numbers"><i class="fa fa-mobile-phone"></i>500 Numbers</span></li>
                                         @yield('features2')
+										<br/><br/>
+										<a href="/getstarted/2" class="btn btn-lg btn-success">Get 1 Free Month</a>
                                     </ul>
                                 </div>
 
@@ -71,13 +75,15 @@
                                 <div class="pricing-header" style="background-color: #14646D;">
                                     <p class="pricing-title">Extended Plan</p>
                                     <p class="pricing-rate"><sup>$</sup> 7<span class="smaller">00</span> <span class="small-pricing">/Year.</span></p>
-                                    <a href="/getstarted/3" class="btn btn-custom">And Get Free Month</a>
+                                    <a href="/getstarted/3" class="btn btn-light">Get 1 Free Month</a>
                                 </div>
 
                                 <div class="pricing-list">
                                     <ul>
                                         <li><span class="numbers"><i class="fa fa-mobile-phone"></i>1000 Numbers</span></li>
                                         @yield('features3')
+										<br/><br/>
+										<a href="/getstarted/3" class="btn btn-lg btn-success">Get 1 Free Month</a>
                                     </ul>
                                 </div>
 
