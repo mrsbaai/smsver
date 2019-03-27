@@ -34,8 +34,8 @@
 
                         <div class="login-group">
                             <div class="form-group">
-                                <label for="fp_email" class="sr-only">Email address</label>
-                                <input type="email" class="form-control" id="fp_email" name="fp_email" placeholder="email address"  type="email" required autofocus>
+                                <label for="fp_email" class="sr-only">Email Address</label>
+                                <input type="email" class="form-control" id="fp_email" name="fp_email" placeholder="Email Address"  type="email" required autofocus>
                             </div>
                         </div>
                         <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
