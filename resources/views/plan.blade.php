@@ -72,7 +72,7 @@
                                 <div class="pricing-header" style="background-color: #14646D;">
                                     <p class="pricing-title">Extended Plan</p>
                                     <p class="pricing-rate"><sup>$</sup> 7<span class="smaller">00</span> <span class="small-pricing">/Year.</span></p>
-                                    <a href="/payment/3" class="btn btn-custom">And Get Free Month</a>
+                                    <a href="/payment/3" class="btn btn-success">Get A Free Month</a>
                                 </div>
 
                                 <div class="pricing-list">
