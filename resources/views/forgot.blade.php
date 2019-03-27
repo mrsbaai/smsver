@@ -27,7 +27,8 @@
 
                     <div class="etc-login-form">
                         <p>When you fill in your registered email address, you will be sent instructions on how to reset your password.</p>
-                    </div>
+                    <br/>
+					</div>
                 @include('flash::message')
                     <div class="main-login-form">
 
@@ -40,8 +41,10 @@
                         <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
                     </div>
                     <div class="etc-login-form">
-                        <p>already have an account? <a href="#">login here</a></p>
-                        <p>new user? <a href="#">create new account</a></p>
+					<br/>
+                        <p>Already have an account? <a href="#">Login here</a></p>
+						<br/>
+                        <p>New user? <a href="#">Create an account</a></p>
                     </div>
                 {{ Form::close() }}
             </div>
