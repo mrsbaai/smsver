@@ -38,7 +38,7 @@
             <li class="list-group-item d-flex justify-content-between lh-condensed">
               <div>
                 <h6 class="my-0">Amount</h6>
-                <small class="text-muted">{{$numbers}} Numbers</small>
+                <small class="text-muted"><b>{{$numbers}} Numbers</b></small>
               </div>
             </li>
             <li class="list-group-item d-flex justify-content-between lh-condensed">
