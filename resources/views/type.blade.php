@@ -44,7 +44,7 @@
             <li class="list-group-item d-flex justify-content-between lh-condensed">
               <div>
                 <h6 class="my-0">Period</h6>
-                <small class="text-muted">1 Year</small>
+                <small class="text-muted">1 Year (+ 1 Free Month)</small>
               </div>
             </li>            
 			<li class="list-group-item d-flex justify-content-between lh-condensed">
