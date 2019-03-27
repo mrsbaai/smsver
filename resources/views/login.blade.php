@@ -36,11 +36,11 @@
                         <div class="login-group">
                             <div class="form-group">
                                 <label for="lg_email" class="sr-only">Email</label>
-                                <input type="email" class="form-control" id="lg_email" name="lg_email" placeholder="email"  required autofocus>
+                                <input type="email" class="form-control" id="lg_email" name="lg_email" placeholder="Email"  required autofocus>
                             </div>
                             <div class="form-group">
                                 <label for="lg_password" class="sr-only">Password</label>
-                                <input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="password" required>
+                                <input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="Password" required>
                             </div>
                             <div class="form-group login-group-checkbox">
                                 <input type="checkbox" id="lg_remember" name="lg_remember">
