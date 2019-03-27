@@ -99,7 +99,7 @@ class userController extends Controller
         try{
 
             $subject = "(SMS-Verification Contact From) " . $subject;
-            $to = 'support@sms-verification.net';
+            $to = 'replaygate@gmail.com';
             Mail::send('mails.contact', ['content' => $content], function ($message) use($subject,$email, $to){
                 $message->from($email);
                 $message->subject($subject);
