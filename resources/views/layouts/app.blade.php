@@ -92,6 +92,8 @@
             <a  href="/login">Login</a>
 		<br/>  
 		 <a href="/pricing"><img src="/img/we-accept.png"style="max-height: 80px;"></a>
+		 @else
+			 <br/><br/>
         @endif
 		</div>
 
