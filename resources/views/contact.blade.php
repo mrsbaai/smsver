@@ -38,7 +38,7 @@
                     <div class="login-group">
                         <div class="form-group">
                             <label for="lg_email" class="sr-only">Email</label>
-                            <input type="email" class="form-control" id="lg_email" name="lg_email" placeholder="Your Emaill Address" required autofocus>
+                            <input type="email" class="form-control" id="lg_email" name="lg_email" placeholder="Your Email Address" required autofocus>
                         </div>
                         <div class="form-group">
                             <label for="lg_subject" class="sr-only">Subject</label>
