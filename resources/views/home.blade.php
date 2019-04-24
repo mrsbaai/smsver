@@ -55,7 +55,7 @@
 		
     </div>
 	@if(Session::has('message'))
-<script>alert({{ Session::get('message') }})</script>
+<script>alert('{{ Session::get("message") }}');</script>
 @endif
 
     <div class="container width-fix col-sm-12">
