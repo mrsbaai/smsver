@@ -54,6 +54,9 @@
         <h3 >A Simple API Service To Bypass SMS Verification Anywhere</h3>
 		
     </div>
+	@if(Session::has('message'))
+<p class="alert alert-info">{{ Session::get('message') }}</p>
+@endif
 
     <div class="container width-fix col-sm-12">
         <div class="jumbotron" >
