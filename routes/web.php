@@ -19,7 +19,11 @@ Route::get('/','pagesController@home')->middleware(CheckPaid::class);
 
 
 Route::get('/success', function () {
-    flash('Something went wrong')->success();
+	Session::flash('Success', 'Thank you for your payment! you will receive an email when your account is ready.'); 
+	return redirect('/');
+});
+Route::get('/success', function () {
+	Session::flash('Fail!', 'Payment canceled!'); 
 	return redirect('/');
 });
 Route::get('/fail','pagesController@home')->middleware(CheckPaid::class);
