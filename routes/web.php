@@ -16,6 +16,12 @@ use App\Http\Middleware\CheckPaid;
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
 Route::get('/','pagesController@home')->middleware(CheckPaid::class);
+
+Route::get('/success','pagesController@home')->middleware(CheckPaid::class);
+Route::get('/fail','pagesController@home')->middleware(CheckPaid::class);
+Route::get('/payeer','pagesController@home')->middleware(CheckPaid::class);
+
+
 Route::get('/ref/{ref}','pagesController@home')->middleware(CheckPaid::class);
 
 Route::get('/dashboard','pagesController@dashboard');
