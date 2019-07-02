@@ -16,6 +16,21 @@ use App\Http\Middleware\CheckPaid;
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
 Route::get('/','pagesController@home')->middleware(CheckPaid::class);
+
+
+Route::get('/success', function () {
+
+	return redirect('/')->with('message', 'Thank you for your payment! you will receive an email when your account is ready.');
+});
+
+Route::get('/fail', function () {
+return redirect('/')->with('message', 'Payment canceled!');
+
+});
+
+Route::get('/payeer','pagesController@home')->middleware(CheckPaid::class);
+
+
 Route::get('/ref/{ref}','pagesController@home')->middleware(CheckPaid::class);
 
 Route::get('/dashboard','pagesController@dashboard');
