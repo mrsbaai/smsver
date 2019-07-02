@@ -7,9 +7,31 @@ use Symfony\Component\HttpFoundation\Cookie;
 use Illuminate\Support\Facades\Auth;
 use DB;
 
+use Illuminate\Support\Facades\Response;
+use SMTPValidateEmail\Validator as SmtpEmailValidator;
 
 class pagesController extends Controller
 {
+	
+	    public function validateTest(){
+
+
+        $sender = 'example@hotmail.com';
+        $emails = array(
+            'ylfo2ik3ti9fgij4zmtw@hotmail.com',
+            'blooddity@hotmail.com'
+
+        );
+
+        $validator = new SmtpEmailValidator($emails, $sender);
+        $results   = $validator->validate();
+        $log = $validator->getLog();
+        return Response::json(array($results, $log));
+
+
+
+    }
+	
     public function home(){
 
         if (Auth::check()){return redirect()->intended('payment');}

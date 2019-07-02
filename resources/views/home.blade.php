@@ -155,7 +155,7 @@
             <div class="col-lg-3">
                 <img class="rounded-circle" src="/img/anonymous.png" alt="Generic placeholder image" width="140" height="140">
                 <h2>ANONYMOUS</h2>
-                <p>We never ask for any personal information. And you can completely delete your account.</p>
+                <p>We never ask for any personal information, and you can completely delete your account.</p>
 
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-3">

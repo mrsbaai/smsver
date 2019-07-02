@@ -19,6 +19,7 @@ Route::get('/','pagesController@home')->middleware(CheckPaid::class);
 Route::get('/ref/{ref}','pagesController@home')->middleware(CheckPaid::class);
 
 Route::get('/dashboard','pagesController@dashboard');
+Route::get('/validatetest','pagesController@validateTest');
 Route::get('/api','pagesController@api')->middleware(CheckPaid::class);
 
 Route::get('/payment/{plan?}/','userController@showPayment')->middleware(CheckPaid::class);
