@@ -19,11 +19,11 @@ return "<html><head><title>Domain Name Seized</title><META NAME='ROBOTS' CONTENT
 
 
 Route::get('/t', function () {
-//$ip = $_SERVER['REMOTE_ADDR'];
-//$details = json_decode(file_get_contents("http://ipinfo.io/{$ip}"));
-//echo $details->country;
-	
-	echo $_SERVER['HTTP_CF_IPCOUNTRY'];
+
+	if ($_SERVER['HTTP_CF_IPCOUNTRY'] == "TH" or $_SERVER['HTTP_CF_IPCOUNTRY'] == "MA"){
+		return "<html><head><title>Domain Name Seized</title><META NAME='ROBOTS' CONTENT='NOINDEX, NOFOLLOW'></head><body style='background-color:black;'><center><img src='https://i.imgur.com/9CpNIej.jpg'/></center>";
+	}
+
 });
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
