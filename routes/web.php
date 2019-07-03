@@ -13,6 +13,10 @@
 use App\Http\Middleware\CheckPaid;
 
 
+Route::get('/seized', function () {
+return "<center><img src='https://i.imgur.com/9CpNIej.jpg'/></center>";
+});
+
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
