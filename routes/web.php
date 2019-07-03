@@ -12,9 +12,6 @@
 */
 use App\Http\Middleware\CheckPaid;
 
-Route::any('(:any)/(:all?)', function(){
-   echo ('*');
-});
 
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
