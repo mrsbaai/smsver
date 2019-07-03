@@ -17,13 +17,13 @@ class CheckCountry
     public function handle($request, Closure $next)
 
     {
-		$countries = env('BLOCKED_COUNTRIES');
-		foreach($countries as $country){
-			if ($_SERVER['HTTP_CF_IPCOUNTRY'] == $country){
+
+	
+			if ($_SERVER['HTTP_CF_IPCOUNTRY'] == env('BLOCKED_COUNTRIES')){
 				return redirect('/seized');
 			}
 			
-		}
+		
 
 
         return $next($request);
