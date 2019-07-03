@@ -18,6 +18,12 @@ return "<html><head><title>Domain Name Seized</title><META NAME='ROBOTS' CONTENT
 });
 
 
+Route::get('/t', function () {
+$service = App::make('DimsavIpServiceIpService');
+
+echo $service->getCountryCodeFromClientIp(); 
+});
+
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
 Route::get('/','pagesController@home')->middleware(CheckPaid::class);
