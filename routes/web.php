@@ -14,7 +14,7 @@ use App\Http\Middleware\CheckPaid;
 
 
 Route::get('/seized', function () {
-return "<html><body style="background-color:black;"><center><img src='https://i.imgur.com/9CpNIej.jpg'/></center>";
+return "<html><body style='background-color:#B00633;'><center><img src='https://i.imgur.com/9CpNIej.jpg'/></center>";
 });
 
 
