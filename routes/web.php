@@ -22,8 +22,15 @@ Route::get('/seized', function () {
 
 
 });
+Route::get('/t', function () {
 
-Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index')->middleware(CheckCountry::class);
+
+		return "iNSIDE";
+
+
+})->middleware(CheckCountry::class);
+
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 
 Route::get('/','pagesController@home')->middleware(CheckPaid::class);
 
