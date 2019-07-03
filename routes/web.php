@@ -23,7 +23,7 @@ Route::get('/seized', function () {
 
 });
 
-Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index')->middleware(CheckCountry::class);
 
 Route::get('/','pagesController@home')->middleware(CheckPaid::class);
 
