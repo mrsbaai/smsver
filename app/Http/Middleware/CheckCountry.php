@@ -15,10 +15,16 @@ class CheckCountry
      * @return mixed
      */
     public function handle($request, Closure $next)
+
     {
-	if ($_SERVER['HTTP_CF_IPCOUNTRY'] == "TH" or $_SERVER['HTTP_CF_IPCOUNTRY'] == "MA"){
-		return redirect('/seized');
-	}
+		$countries = env('BLOCKED_COUNTRIES');
+		foreach($countries as $country){
+			if ($_SERVER['HTTP_CF_IPCOUNTRY'] == $country){
+				return redirect('/seized');
+			}
+			
+		}
+
 
         return $next($request);
     }
