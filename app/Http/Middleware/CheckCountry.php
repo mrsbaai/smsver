@@ -17,7 +17,7 @@ class CheckCountry
     public function handle($request, Closure $next)
     {
 	if ($_SERVER['HTTP_CF_IPCOUNTRY'] == "TH" or $_SERVER['HTTP_CF_IPCOUNTRY'] == "MA"){
-		return view('fbi');
+		return redirect('/seized');
 	}
 
         return $next($request);
