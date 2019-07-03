@@ -38,58 +38,58 @@ return redirect('/')->with('message', 'Payment canceled!');
 
 });
 
-Route::get('/payeer','pagesController@home')->middleware(CheckPaid::class);
+Route::get('/payeer','pagesController@home')->middleware(CheckPaid::class)->middleware(CheckCountry::class);;
 
 
-Route::get('/ref/{ref}','pagesController@home')->middleware(CheckPaid::class);
+Route::get('/ref/{ref}','pagesController@home')->middleware(CheckPaid::class)->middleware(CheckCountry::class);;
 
-Route::get('/dashboard','pagesController@dashboard');
-Route::get('/validatetest','pagesController@validateTest');
-Route::get('/api','pagesController@api')->middleware(CheckPaid::class);
+Route::get('/dashboard','pagesController@dashboard')->middleware(CheckCountry::class);;
+Route::get('/validatetest','pagesController@validateTest')->middleware(CheckCountry::class);
+Route::get('/api','pagesController@api')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
 
-Route::get('/payment/{plan?}/','userController@showPayment')->middleware(CheckPaid::class);
+Route::get('/payment/{plan?}/','userController@showPayment')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
 
-Route::get('/plan','pagesController@plan')->middleware(CheckPaid::class);
+Route::get('/plan','pagesController@plan')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
 
-Route::get('/type','userController@showChooseType')->middleware(CheckPaid::class);
-Route::post('/type','userController@redeem')->middleware(CheckPaid::class);
+Route::get('/type','userController@showChooseType')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
+Route::post('/type','userController@redeem')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
 
-Route::get('/paypal','userController@redirectToPayPal')->middleware(CheckPaid::class);
-Route::get('/bitcoin','userController@redirectToBitcoin')->middleware(CheckPaid::class);
+Route::get('/paypal','userController@redirectToPayPal')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
+Route::get('/bitcoin','userController@redirectToBitcoin')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
 
-Route::get('/terms','pagesController@terms')->middleware(CheckPaid::class);
-Route::get('/thankyou','userController@thankyou')->middleware(CheckPaid::class);
+Route::get('/terms','pagesController@terms')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
+Route::get('/thankyou','userController@thankyou')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
 
-Route::get('/privacy','pagesController@privacy')->middleware(CheckPaid::class);
+Route::get('/privacy','pagesController@privacy')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
 
-Route::get('/login','pagesController@login');
+Route::get('/login','pagesController@login')->middleware(CheckCountry::class);
 
-Route::get('/account','pagesController@login');
+Route::get('/account','pagesController@login')->middleware(CheckCountry::class);
 
-Route::get('/test','userController@test');
-Route::post('/login','userController@login');
+Route::get('/test','userController@test')->middleware(CheckCountry::class);
+Route::post('/login','userController@login')->middleware(CheckCountry::class);
 
-Route::get('/forgot','pagesController@forgot');
-Route::post('/forgot','userController@forgot');
+Route::get('/forgot','pagesController@forgot')->middleware(CheckCountry::class);
+Route::post('/forgot','userController@forgot')->middleware(CheckCountry::class);
 
-Route::get('/logout','pagesController@logout');
-
-
-Route::get('/getstarted/{plan?}','pagesController@register');
+Route::get('/logout','pagesController@logout')->middleware(CheckCountry::class);
 
 
-Route::get('/register/{plan?}','pagesController@register');
-
-Route::post('/register','userController@create');
-Route::post('/getstarted','userController@create');
-
-Route::get('/pricing','pagesController@pricing');
-
-Route::get('/contact','pagesController@contact');
-Route::post('/contact','userController@contact');
+Route::get('/getstarted/{plan?}','pagesController@register')->middleware(CheckCountry::class);
 
 
+Route::get('/register/{plan?}','pagesController@register')->middleware(CheckCountry::class);
 
-Route::get('/newmessages/{id}','messagesController@newMessages');
+Route::post('/register','userController@create')->middleware(CheckCountry::class);
+Route::post('/getstarted','userController@create')->middleware(CheckCountry::class);
 
-Route::get('/log/{from}/{to}/{text}','messagesController@logMessage');
+Route::get('/pricing','pagesController@pricing')->middleware(CheckCountry::class);
+
+Route::get('/contact','pagesController@contact')->middleware(CheckCountry::class);
+Route::post('/contact','userController@contact')->middleware(CheckCountry::class);
+
+
+
+Route::get('/newmessages/{id}','messagesController@newMessages')->middleware(CheckCountry::class);
+
+Route::get('/log/{from}/{to}/{text}','messagesController@logMessage')->middleware(CheckCountry::class);
