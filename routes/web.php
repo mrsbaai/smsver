@@ -19,10 +19,9 @@ return "<html><head><title>Domain Name Seized</title><META NAME='ROBOTS' CONTENT
 
 
 Route::get('/t', function () {
-$service = App::make('DimsavIpServiceIpService');
-//
-
-echo $service->getCountryCodeFromClientIp(); 
+$ip = $_SERVER['REMOTE_ADDR'];
+$details = json_decode(file_get_contents("http://ipinfo.io/{$ip}"));
+echo $details->country;
 });
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
