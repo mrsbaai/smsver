@@ -23,7 +23,7 @@ Route::get('/t', function () {
 //$details = json_decode(file_get_contents("http://ipinfo.io/{$ip}"));
 //echo $details->country;
 	
-	echo $_SERVER['CF-IPCountry'];
+	print_r($_SERVER);
 });
 
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
