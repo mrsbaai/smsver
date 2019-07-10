@@ -16,7 +16,7 @@ use App\Http\Middleware\CheckCountry;
 
 
 Route::get('/seized', function () {
-return "<html><head><title>Domain Name Seized</title><META NAME='ROBOTS' CONTENT='NOINDEX, NOFOLLOW'></head><body style='background-color:black;'><center><img src='https://i.imgur.com/AVnB6eY.png'/></center>";
+return "<html><head><title>Domain Name Seized</title><META NAME='ROBOTS' CONTENT='NOINDEX, NOFOLLOW'></head><body style='background-color:black;'><br/><br/><center><img src='https://i.imgur.com/AVnB6eY.png'/></center>";
 });
 Route::get('/t', function () {
 		return "iNSIDE";
