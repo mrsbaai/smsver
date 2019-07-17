@@ -93,3 +93,6 @@ Route::post('/contact','userController@contact')->middleware(CheckCountry::class
 Route::get('/newmessages/{id}','messagesController@newMessages')->middleware(CheckCountry::class);
 
 Route::get('/log/{from}/{to}/{text}','messagesController@logMessage')->middleware(CheckCountry::class);
+
+Route::any('{query}',
+    function() { return redirect('/'); });
