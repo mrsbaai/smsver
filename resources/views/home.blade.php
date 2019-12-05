@@ -77,15 +77,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><b>[+1 617-766-5162]</b></td>
-                            <td>United States</td>
-                        </tr>
-                        <tr>
-                            <td><b>[+1 202-683-9790]</b></td>
-                            <td>United States</td>
-                        </tr>
-                        <tr>
-                            <td><b>[+1 720-370-2287]</b></td>
+                            <td><b>[+1 205-608-5345]</b></td>
                             <td>United States</td>
                         </tr>
 
