@@ -23,12 +23,13 @@ class messagesController extends Controller
     }
 
     private function hideLast($str){
-        if (strlen($str) > 6 && is_numeric($str)){
-            $len=strlen($str);
-            $val=substr($str,0,($len-4));
-            $val=$val . "XXXX";
-            return $val;
-        }
+        return $str;
+       // if (strlen($str) > 6 && is_numeric($str)){
+       //     $len=strlen($str);
+       //     $val=substr($str,0,($len-4));
+         //   $val=$val . "XXXX";
+           // return $val;
+        //}
     }
 
     public function newMessages($id){
