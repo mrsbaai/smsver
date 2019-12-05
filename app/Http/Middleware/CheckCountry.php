@@ -17,10 +17,11 @@ class CheckCountry
     public function handle($request, Closure $next)
 
     {
-		$countries =  explode(',', env('BLOCKED_COUNTRIES'));
+        $countries =  explode(',', env('BLOCKED_COUNTRIES'));
+        echo $_SERVER['HTTP_CF_IPCOUNTRY'];
 		foreach($countries as $country){
 			if ($_SERVER['HTTP_CF_IPCOUNTRY'] == $country){
-				return $_SERVER['HTTP_CF_IPCOUNTRY'];
+				return "";
 			}
 			
 		}
