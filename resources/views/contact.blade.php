@@ -53,9 +53,9 @@
                             <label for="lg_message" class="sr-only">Message</label>
                             <textarea class="form-control" id="lg_message" name="lg_message" placeholder="Message" required></textarea>
                         </div>
-                        <div class="form-group">
-                        @include('recaptcha::widget')
-                        </div>
+                        <br/><br/>
+                        <center>@include('recaptcha::widget')</center>
+                        
 
                     </div>
                     <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
