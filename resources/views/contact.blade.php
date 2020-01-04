@@ -43,7 +43,7 @@
                     <div class="login-group">
                         <div class="form-group">
                             <label for="lg_email" class="sr-only">Email</label>
-                            <input type="email" class="form-control" id="lg_email" name="lg_email" placeholder="Your Email Address" required autofocus>
+                            <input type="email" class="form-control" id="lg_email" name="lg_email" placeholder="Your Email" required autofocus>
                         </div>
                         <div class="form-group">
                             <label for="lg_subject" class="sr-only">Subject</label>
@@ -51,9 +51,9 @@
                         </div>
                         <div class="form-group">
                             <label for="lg_message" class="sr-only">Message</label>
-                            <textarea class="form-control" id="lg_message" name="lg_message" placeholder="Message" required></textarea>
+                            <textarea class="form-control" id="lg_message" rows="8" name="lg_message" placeholder="Message" required></textarea>
                         </div>
-                        <br/><br/>
+                        <br/>
                         <center>@include('recaptcha::widget')</center>
                         
 
