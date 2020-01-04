@@ -6,7 +6,7 @@
 
 
 @section('head')
-
+    @include('recaptcha::script')
     <link rel="stylesheet" href="{{ URL::asset('css/auth.css') }}">
     <script src="{{ URL::asset('js/auth.js') }}"></script>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -48,6 +48,7 @@
                             <label for="lg_message" class="sr-only">Message</label>
                             <textarea class="form-control" id="lg_message" name="lg_message" placeholder="Message" required></textarea>
                         </div>
+                        @include('recaptcha::widget')
 
                     </div>
                     <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
