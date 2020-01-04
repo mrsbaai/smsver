@@ -88,7 +88,7 @@ class userController extends Controller
         return redirect()->intended('forgot');
 
     }
-    public function contact(){
+    public function contact(Request $request){
 
         $this->validate($request, [
             'g-recaptcha-response' => 'required|recaptcha',
@@ -97,7 +97,7 @@ class userController extends Controller
             // Custom messages
             'g-recaptcha-response.required' => 'Please complete the reCAPTCHA.',
         ]);
-        
+
         $email = Input::get('lg_email');
         $subject = Input::get('lg_subject');
         $content = Input::get('lg_message');
