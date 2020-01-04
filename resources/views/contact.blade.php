@@ -36,7 +36,9 @@
                 <div class="main-login-form">
                     @include('flash::message')
                     @if($errors->any())
-                        {{ implode('', $errors->all('<div>:message</div>')) }}
+                    <div class="alert alert-danger" role="alert">
+                        {{ implode('', $errors->all(':message')) }}
+                    </div>
                     @endif
                     <div class="login-group">
                         <div class="form-group">
