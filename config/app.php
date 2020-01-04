@@ -181,7 +181,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
-        Nissi\ReCaptcha\ReCaptchaServiceProvider::class,
+
 
     ],
 
