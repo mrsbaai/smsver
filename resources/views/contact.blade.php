@@ -35,6 +35,9 @@
 
                 <div class="main-login-form">
                     @include('flash::message')
+                    @if($errors->any())
+                        {{ implode('', $errors->all('<div>:message</div>')) }}
+                    @endif
                     <div class="login-group">
                         <div class="form-group">
                             <label for="lg_email" class="sr-only">Email</label>
