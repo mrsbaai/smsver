@@ -12,6 +12,7 @@
 */
 use App\Http\Middleware\CheckPaid;
 use App\Http\Middleware\CheckCountry;
+use Illuminate\Http\Request;
 
 
 
@@ -32,6 +33,13 @@ Route::get('/success', function () {
 
 	return redirect('/')->with('message', 'Thank you for your payment! you will receive an email when your account is ready.');
 });
+
+
+Route::get('/showm', function (Request $request) {
+	return $request->input('message');
+
+});
+
 
 Route::get('/fail', function () {
 return redirect('/')->with('message', 'Payment canceled!');
