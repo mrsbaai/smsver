@@ -82,15 +82,16 @@
 		<br/><br/><br/><br/>
 		<div class="container marketing col-sm-12 text-center">
 			<h3 class="mb-3">Please Choose A Payment Method:</h3>
-			
-			<a href="/#" class="btn btn-lg paybutton paypal" aria-disabled="true"><span><i class="fa fa-paypal"></i> PayPal </span></a> 
+      
+       <!-- <a href="/paypal" class="btn btn-lg paybutton paypal" aria-disabled="true"><span><i class="fa fa-paypal"></i> PayPal </span></a>  -->
+       <a href="#" class="btn btn-lg paybutton btn-secondary" role="button"  aria-disabled="true"><span><i class="fa fa-paypal"></i> PayPal </span></a> 
 
 
       <a href="/bitcoin" class="btn btn-lg paybutton bitcoin"><span><i class="fa fa-bitcoin"></i> Bitcoin </span></a>
       
       <br/><br/>
 
-      <span class="badge badge-warning" contenteditable="true">(PayPal payments are temperately unavailable.)</span>
+      <span class="badge badge-warning">(PayPal payments are temperately unavailable.)</span>
       
 
 		</div>
