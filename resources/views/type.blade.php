@@ -89,6 +89,8 @@
       <a href="/bitcoin" class="btn btn-lg paybutton bitcoin"><span><i class="fa fa-bitcoin"></i> Bitcoin </span></a>
       
       <br/><br/>
+
+      <span class="badge badge-warning" contenteditable="true">(PayPal payments are temperately unavailable.)</span>
       
 
 		</div>
