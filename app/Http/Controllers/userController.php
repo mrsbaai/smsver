@@ -70,7 +70,7 @@ class userController extends Controller
 
         }
         catch(\Exception $e){
-            flash('Something went wrong')->error();
+            flash($e)->error();
             return redirect()->intended('register');
         }
 
