@@ -51,7 +51,7 @@ public function getIp(){
 
         if (Auth::check()){
             $ip = $this->getIp();
-            User::where('email', "=", Auth::email())->update(['ip' => $ip]);
+            User::where('id', "=", Auth::id())->update(['ip' => $ip]);
             return redirect()->intended('payment');
         }
         $messageController = new messagesController();
