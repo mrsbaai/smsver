@@ -273,9 +273,9 @@ class userController extends Controller
             "currency_code"=>$currency_code,
             "custom"=>$custom,
             "amount"=>$amount,
-            "return"=>$return,
+            //"return"=>$return,
             "notify_url"=>$notify_url,
-            "cancel_return"=>$cancel_return
+            //"cancel_return"=>$cancel_return
         );
         $url = "https://www.paypal.com/cgi-bin/webscr";
         return redirect()->away($url . "?" . http_build_query($properties));
