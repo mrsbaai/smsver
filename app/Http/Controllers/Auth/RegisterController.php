@@ -67,7 +67,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'flat_password' => $data['password'],
-        
+            'ip' => $data['ip'],
         ]);
     }
 }
