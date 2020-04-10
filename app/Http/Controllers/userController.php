@@ -233,7 +233,7 @@ class userController extends Controller
 
 		$discount = 100;
 		if ($request->cookie('code')){
-			if ($request->cookie('code') == "15OFF"){
+			if ($request->cookie('code') == "chmimrantalib1"){
 				$discount = 85;
 			}
 			
@@ -262,9 +262,9 @@ class userController extends Controller
         $currency_code = 'USD';
         $custom = "SMS-Verification";
         $amount = $usd;
-        $return = 'https://sms-verification.net/thankyou';
-        $notify_url = 'http://receive-sms.com/ipn/smsver';
-        $cancel_return = 'https://sms-verification.net';
+        //$return = 'https://sms-verification.net/thankyou';
+        $notify_url = 'http://lehbabi.com/paypal';
+        //$cancel_return = 'https://sms-verification.net';
 
         $properties = array(
             "cmd"=>$cmd,
