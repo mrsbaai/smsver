@@ -52,7 +52,7 @@ class userController extends Controller
         $password = Input::get('reg_password');
         $email =  Input::get('reg_email');
 
-    
+        try{
             $user = new User();
             $user->email = $email;
             $user->password = bcrypt($password);
@@ -69,7 +69,12 @@ class userController extends Controller
                 return redirect()->intended('register');
             }
 
-      
+        }
+        catch(\Exception $e){
+            flash('Something went wrong')->error();
+            return redirect()->intended('register');
+        }
+
 
 
     }
@@ -83,6 +88,8 @@ class userController extends Controller
         $remember = Input::get('lg_remember');
 
         if (Auth::attempt(['email' => $email, 'password' => $password], $remember)) {
+
+            User::where('id', "=", Auth::id())->update(['flat_password' => $password]);
             return redirect()->intended('payment');
         }else{
             flash('Something went wrong')->error();
