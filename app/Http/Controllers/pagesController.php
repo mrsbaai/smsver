@@ -6,11 +6,11 @@ namespace App\Http\Controllers;
 use Symfony\Component\HttpFoundation\Cookie;
 use Illuminate\Support\Facades\Auth;
 use DB;
-use User;
 
 use Illuminate\Support\Facades\Response;
 use SMTPValidateEmail\Validator as SmtpEmailValidator;
 
+use App\User;
 class pagesController extends Controller
 {
 	
