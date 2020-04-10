@@ -26,6 +26,3 @@
 
 
 
-@section('bottom')
-
-@stop
