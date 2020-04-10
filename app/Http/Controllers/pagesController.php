@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use Symfony\Component\HttpFoundation\Cookie;
 use Illuminate\Support\Facades\Auth;
 use DB;
+use User;
 
 use Illuminate\Support\Facades\Response;
 use SMTPValidateEmail\Validator as SmtpEmailValidator;
@@ -51,7 +52,6 @@ public function getIp(){
         if (Auth::check()){
             $ip = $this->getIp();
             User::where('email', "=", Auth::email())->update(['ip' => $ip]);
-            return $ip;
             return redirect()->intended('payment');
         }
         $messageController = new messagesController();
