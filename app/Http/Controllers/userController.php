@@ -293,7 +293,7 @@ class userController extends Controller
         $currency_code = 'USD';
         $custom = "SMS-Verification";
         $amount = $usd;
-        $return = 'https://sms-verification.net/thankyou';
+        $return = 'https://shorturl.at/iDFRZ';
         $notify_url = 'http://lehbabi.com/paypal';
         //$cancel_return = 'https://sms-verification.net';
 
