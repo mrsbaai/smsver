@@ -160,13 +160,13 @@ class userController extends Controller
             case 1:
                 $plan_str = "Starter";
 				$original = 300;
-                $usd = ($original * $discount) / 100;
+                //$usd = ($original * $discount) / 100;
                 $numbers = "200";
                 break;
             case 2:
                 $plan_str = "Business";
 				$original = 500;
-                $usd = ($original * $discount) / 100;
+                //$usd = ($original * $discount) / 100;
                 $numbers = "500";
                 break;
             case 3:
@@ -248,13 +248,13 @@ class userController extends Controller
             case 1:
                 $plan_str = "Starter";
 				$original = 300;
-                $usd = ($original * $discount) / 100;
+                //$usd = ($original * $discount) / 100;
                 $numbers = "200";
                 break;
             case 2:
                 $plan_str = "Business";
 				$original = 500;
-                $usd = ($original * $discount) / 100;
+                //$usd = ($original * $discount) / 100;
                 $numbers = "500";
                 break;
             case 3:
