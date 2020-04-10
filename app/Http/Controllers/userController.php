@@ -232,29 +232,39 @@ class userController extends Controller
 
 
 		$discount = 100;
-		if ($request->cookie('code')){
+		if ($request->cookie('code') !== null){
 			if ($request->cookie('code') == "chmimrantalib1"){
-				$discount = 85;
+				$discount = 60;
+				$code = $request->cookie('code');
+			}else{
+				$code = "-";
 			}
 			
+		}else{
+			$code = "-";
 		}
-        switch ($request->cookie('plan')) {
+		
+		switch ($request->cookie('plan')) {
             case 1:
                 $plan_str = "Starter";
-				$usd = (300 * $discount) / 100;
+				$original = 300;
+                $usd = ($original * $discount) / 100;
                 $numbers = "200";
                 break;
             case 2:
                 $plan_str = "Business";
-                $usd = (500 * $discount) / 100;
+				$original = 500;
+                $usd = ($original * $discount) / 100;
                 $numbers = "500";
                 break;
             case 3:
                 $plan_str = "Extended";
-                $usd = (700 * $discount) / 100;
+				$original = 700;
+                $usd = ($original * $discount) / 100;
                 $numbers = "1000";
                 break;
         }
+
 
         $cmd = '_xclick';
         $business = $this->GetPayPal();
