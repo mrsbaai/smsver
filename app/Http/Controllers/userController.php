@@ -145,7 +145,7 @@ class userController extends Controller
     public function showChooseType(Request $request){
 		$discount = 100;
 		if ($request->cookie('code') !== null){
-			if ($request->cookie('code') == "chmimrantalib1"){
+			if ($request->cookie('code') == "20PayPal"){
 				$discount = 60;
 				$code = $request->cookie('code');
 			}else{
@@ -160,7 +160,7 @@ class userController extends Controller
             case 1:
                 $plan_str = "Starter";
 				$original = 300;
-                //$usd = ($original * $discount) / 100;
+                $usd = ($original * $discount) / 100;
                 $usd = $original;
                 $numbers = "200";
                 break;
@@ -235,7 +235,7 @@ class userController extends Controller
 
 		$discount = 100;
 		if ($request->cookie('code') !== null){
-			if ($request->cookie('code') == "chmimrantalib1"){
+			if ($request->cookie('code') == "20PayPal"){
 				$discount = 60;
 				$code = $request->cookie('code');
 			}else{
@@ -250,7 +250,7 @@ class userController extends Controller
             case 1:
                 $plan_str = "Starter";
 				$original = 300;
-                //$usd = ($original * $discount) / 100;
+                $usd = ($original * $discount) / 100;
                 $usd = $original;
                 $numbers = "200";
                 break;
