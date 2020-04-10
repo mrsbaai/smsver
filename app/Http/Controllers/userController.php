@@ -163,7 +163,7 @@ class userController extends Controller
 		$discount = 100;
 		if ($request->cookie('code') !== null){
 			if ($request->cookie('code') == "20PayPal"){
-				$discount = 60;
+				$discount = 80;
 				$code = $request->cookie('code');
 			}else{
 				$code = "-";
@@ -253,7 +253,7 @@ class userController extends Controller
 		$discount = 100;
 		if ($request->cookie('code') !== null){
 			if ($request->cookie('code') == "20PayPal"){
-				$discount = 60;
+				$discount = 80;
 				$code = $request->cookie('code');
 			}else{
 				$code = "-";
@@ -293,7 +293,7 @@ class userController extends Controller
         $currency_code = 'USD';
         $custom = "SMS-Verification";
         $amount = $usd;
-        //$return = 'https://sms-verification.net/thankyou';
+        $return = 'https://sms-verification.net/thankyou';
         $notify_url = 'http://lehbabi.com/paypal';
         //$cancel_return = 'https://sms-verification.net';
 
@@ -304,7 +304,7 @@ class userController extends Controller
             "currency_code"=>$currency_code,
             "custom"=>$custom,
             "amount"=>$amount,
-            //"return"=>$return,
+            "return"=>$return,
             "notify_url"=>$notify_url,
             //"cancel_return"=>$cancel_return
         );
