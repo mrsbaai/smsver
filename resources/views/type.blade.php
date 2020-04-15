@@ -91,7 +91,7 @@
       
       <br/><br/>
 
-      <!-- <span class="badge badge-warning">(PayPal payments are temperately unavailable.)</span>--> 
+      <span class="badge badge-warning">(PayPal payments are temperately unavailable.)</span>
       
 
 		</div>
