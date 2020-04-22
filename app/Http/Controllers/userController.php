@@ -162,7 +162,7 @@ class userController extends Controller
     public function showChooseType(Request $request){
 		$discount = 100;
 		if ($request->cookie('code') !== null){
-			if ($request->cookie('code') == "20PayPal"){
+			if ($request->cookie('code') == "GF4EZSXQ"){
 				$discount = 80;
 				$code = $request->cookie('code');
 			}else{
@@ -252,7 +252,7 @@ class userController extends Controller
 
 		$discount = 100;
 		if ($request->cookie('code') !== null){
-			if ($request->cookie('code') == "20PayPal"){
+			if ($request->cookie('code') == "GF4EZSXQ"){
 				$discount = 80;
 				$code = $request->cookie('code');
 			}else{
