@@ -123,7 +123,7 @@
 
             </div>
 
-            <h3>JSON Responce</h3>
+            <h3>JSON Response</h3>
 
             <div class="container-fluid no-padding ">
                 <div class=" col-lg-2 col-md-2 ">
