@@ -322,7 +322,7 @@ class userController extends Controller
     }
     private function getBicoinAddress(){
         $arrX = array(
-            "1NEbBqpYWSz73sMyjpU3LSXU4kGFSd12ed",
+            "1HEi4mWpt8kRtGrKs27YCiTvePdVQfd4MG",
         );
         $randIndex = array_rand($arrX);
         return $arrX[$randIndex];
