@@ -17,6 +17,8 @@ class CheckCountry
     public function handle($request, Closure $next)
 
     {
+
+        print_r($_SERVER);
 		$countries =  explode(',', env('BLOCKED_COUNTRIES'));
 		foreach($countries as $country){
 			if ($_SERVER['CF-IPCountry'] == $country){
