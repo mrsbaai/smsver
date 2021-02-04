@@ -19,7 +19,7 @@ class CheckCountry
     {
 		$countries =  explode(',', env('BLOCKED_COUNTRIES'));
 		foreach($countries as $country){
-			if ($_SERVER['HTTP_CF_IPCOUNTRY'] == $country){
+			if ($_SERVER['CF-IPCountry'] == $country){
 				return redirect('/seized');
 			}
 			
