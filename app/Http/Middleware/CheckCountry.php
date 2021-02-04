@@ -35,12 +35,12 @@ class CheckCountry
 
     {
 
-
-
+        $xml = simplexml_load_file("http://www.geoplugin.net/xml.gp?ip=".$this->getRealIpAddr());
+        $client_country =  $xml->geoplugin_countryCode ;
 
 		$countries =  explode(',', env('BLOCKED_COUNTRIES'));
 		foreach($countries as $country){
-			if ($xml->geoplugin_countryCode == $country){
+			if ($client_country == $country){
 				return redirect('/seized');
 			}
 			
