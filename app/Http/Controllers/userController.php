@@ -143,7 +143,7 @@ class userController extends Controller
             return redirect()->intended('contact');
         }
         catch(\Exception $e){
-            flash('Something went wrong')->error();
+            flash($e)->error();
             return redirect()->intended('contact');
         }
     }
