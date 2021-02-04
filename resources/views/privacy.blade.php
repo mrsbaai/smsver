@@ -17,7 +17,7 @@
     <h1>Privacy</h1>
     </div>
 
-    <div class="container marketing col-sm-12">
+    <div class="container marketing col-sm-12 text-center">
         <p>
             We protects your privacy in several ways that most web sites do not:
             <ul>
