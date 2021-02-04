@@ -92,8 +92,8 @@
             <a  href="/login">Login</a>
         <br/>  
         <center>
-         <a href="/pricing"><img src="/img/bitcoin.png"style="max-height: 150px;"></a>
-         <a href="/pricing"><img src="/img/ethereum.png"style="max-height: 150px;"></a>
+         <a href="/pricing"><img src="/img/bitcoin.png"style="max-height: 150px; padding:50px;"></a>
+         <a href="/pricing"><img src="/img/ethereum.png"style="max-height: 150px;; padding:50px;"></a>
         </center>
 		 @else
 			 <br/><br/>
