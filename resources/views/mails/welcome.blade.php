@@ -5,9 +5,9 @@
 
     Please complete your payment. Your account will be setup automatically.
 
-    @component('mail::button', ['url' => 'http://{{env('APP_NAME')}}.net/login'])
+    @component('mail::button', ['url' => 'http://{{env('APP_DOMAIN')}}/login'])
         Login
     @endcomponent
 
-    Any Questions? Please <a href="https://{{env('APP_NAME')}}.net">Contact Us</a>.
+    Any Questions? Please <a href="https://{{env('APP_DOMAIN')}}">Contact Us</a>.
 @endcomponent
