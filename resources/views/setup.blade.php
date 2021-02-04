@@ -7,7 +7,7 @@
 
 @section('head')
 
-    <title>[SMS-Verification] Dashboard</title>
+    <title>[{{env('APP_NAME')}}] Dashboard</title>
 @stop
 
 @section('content')

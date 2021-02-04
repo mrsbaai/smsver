@@ -10,7 +10,7 @@
 
 
     <link rel="stylesheet" media="screen" href="../fonts/font-awesome/font-awesome.min.css" />
-    <title>[SMS-Verification] Payment</title>
+    <title>[{{env('APP_NAME')}}] Payment</title>
 
 @stop
 

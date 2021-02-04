@@ -37,7 +37,7 @@
     @if(Auth::check())
         <div class="container col-xs-6 col-md-6 text-left" style="padding-top:5px;">
             <div class="btn-group" data-toggle="buttons">
-                <h3  style="margin:0px;padding:0px;"> [SMS-Verification.net]</h3>
+                <h3  style="margin:0px;padding:0px;"> [{{env('APP_NAME')}}.net]</h3>
                 @if(Auth::check())
                     <medium class="text-muted">Logged as: {{Auth::user()->email}}</medium>
                 @endif
@@ -53,7 +53,7 @@
     @else
         <div class="container col-xs-12 col-md-5 text-left" style="padding-top:5px;">
             <div class="btn-group" data-toggle="buttons">
-                <h3 style="margin:0px;padding:0px;"> [SMS-Verification.net]</h3>
+                <h3 style="margin:0px;padding:0px;"> [{{env('APP_NAME')}}.net]</h3>
             </div>
 
         </div>
@@ -80,7 +80,7 @@
 
     <div class="container col-xs-12 col-sm-12 col-lg-12 col-md-12 text-center" style="padding:0px; margin:0px;padding-top:120px;">
         <div style="padding:0px;padding-top:30px;margin:0px; background-color: white;">
-		<a  href="/">SMS-Verification.net</a> &copy; 2020
+		<a  href="/">{{env('APP_NAME')}}.net</a> &copy; 2020
         @if(!Auth::check())
             -
             <a  href="/privacy">Privacy</a> |

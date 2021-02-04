@@ -7,7 +7,7 @@
 
 @section('head')
 
-    <title>[SMS-Verification] Terms</title>
+    <title>[{{env('APP_NAME')}}] Terms</title>
 
 @stop
 
@@ -28,11 +28,11 @@
             <li>We reserve the right to cancel any order at any time for any reason with or without notice. </li>
             <li>Your use of this site constitutes your acceptance of these legal terms. </li>
             <li>We are not responsible to you or anyone else for any loss, damage, liability, cost or expense suffered in connection with the use of this site or any content or services available via this site. </li>
-            <li>You indemnify SMS-Verification against each claim, action, proceeding, judgment, damage, loss, expense or liability incurred or suffered by, or brought, made or recovered against us in connection with any use of this site or breach by you of these terms. </li>
-            <li>Any claim relating to the use of the SMS-Verification web site shall be governed by the laws of the state of michigan, without regard to conflict of law principles. </li>
-            <li>To the fullest extent permitted by law, you hereby expressly agree that any proceeding arising out of or relating to your use of the SMS-Verification website services and content shall be instituted in a state or federal court sitting in the county of kent, state of michigan, united states of america and you expressly waive any objection that you may have now or hereafter to the laying of the venue or to the jurisdiction of any such proceeding. You agree that any claim or cause of action arising out of or related to your use of the SMS-Verification website, systems, information, services and/or content must be filed within one (1) year after such claim or cause of action arose. </li>
+            <li>You indemnify {{env('APP_NAME')}} against each claim, action, proceeding, judgment, damage, loss, expense or liability incurred or suffered by, or brought, made or recovered against us in connection with any use of this site or breach by you of these terms. </li>
+            <li>Any claim relating to the use of the {{env('APP_NAME')}} web site shall be governed by the laws of the state of michigan, without regard to conflict of law principles. </li>
+            <li>To the fullest extent permitted by law, you hereby expressly agree that any proceeding arising out of or relating to your use of the {{env('APP_NAME')}} website services and content shall be instituted in a state or federal court sitting in the county of kent, state of michigan, united states of america and you expressly waive any objection that you may have now or hereafter to the laying of the venue or to the jurisdiction of any such proceeding. You agree that any claim or cause of action arising out of or related to your use of the {{env('APP_NAME')}} website, systems, information, services and/or content must be filed within one (1) year after such claim or cause of action arose. </li>
             <li>This website is provided as a public service. No warranty or guarantee is provided pertaining to the quality of data or service. By accepting this agreement, you assume full responsibility for any misuse of the information provided to you. </li>
-            <li>SMS-Verification reserves the right to modify its web pages or deny access to them at any time. Amendments to this policy will be posted at this url and will be effective when posted. Please visit us again for updates.</li>
+            <li>{{env('APP_NAME')}} reserves the right to modify its web pages or deny access to them at any time. Amendments to this policy will be posted at this url and will be effective when posted. Please visit us again for updates.</li>
         </ul>
 
     </div>

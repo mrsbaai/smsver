@@ -7,7 +7,7 @@
 
 @section('head')
 
-    <title>[SMS-Verification] API</title>
+    <title>[{{env('APP_NAME')}}] API</title>
 
 @stop
 
@@ -77,7 +77,7 @@
                 </div>
                 <div class="col-md-8  no-padding">
                     <div class="form-group">
-                        <input  class="form-control input-lg" value="https://sms-verification.net/api/{email}/{password}/{number}" readonly/>
+                        <input  class="form-control input-lg" value="https://{{env('APP_NAME')}}.net/api/{email}/{password}/{number}" readonly/>
                     </div>
 
                     <div class="container-fluid no-padding ">
@@ -188,7 +188,7 @@
 
                 <div class="col-md-8  no-padding">
                     <div class="form-group">
-                        <input  class="form-control input-lg" value="CURL https://sms-verification.net/api/example@gmail.com/pass123/123456789" readonly/>
+                        <input  class="form-control input-lg" value="CURL https://{{env('APP_NAME')}}.net/api/example@gmail.com/pass123/123456789" readonly/>
                     </div>
 
                 </div>

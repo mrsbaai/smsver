@@ -5,13 +5,13 @@
 @section('head')
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="[SMS-Verification]" />
+    <meta property="og:title" content="[{{env('APP_NAME')}}]" />
     <meta property="og:type" content="WebSite" />
     <meta property="og:description" content="Reliable API to Bypass SMS Verification" />
-    <meta property="og:site_name" content="[SMS-Verification]" />
+    <meta property="og:site_name" content="[{{env('APP_NAME')}}]" />
     <meta name="keywords" content="sms, verification">
     <meta name="description" content="Reliable API to Bypass SMS Verification">
-    <title>[SMS-Verification]</title>
+    <title>[{{env('APP_NAME')}}]</title>
 	<style>
 	.converter a {
 		background: -webkit-linear-gradient(90deg, #ECE9E6 10%, #FFFFFF 90%);
@@ -50,7 +50,7 @@
 @section('content')
 
     <div class="container col-sm-12 col-md-12 col-lg-12 text-center" style="padding-bottom:70px;">
-        <h1>SMS-Verification</h1>
+        <h1>{{env('APP_NAME')}}</h1>
         <h3 >A Simple API Service To Bypass SMS Verification Anywhere</h3>
 		
     </div>

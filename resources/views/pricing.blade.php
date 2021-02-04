@@ -7,7 +7,7 @@
 
 @section('head')
 
-    <title>[SMS-Verification] Pricing</title>
+    <title>[{{env('APP_NAME')}}] Pricing</title>
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 

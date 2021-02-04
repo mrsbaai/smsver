@@ -7,7 +7,7 @@
 
 @section('head')
 
-    <title>[SMS-Verification] Privacy</title>
+    <title>[{{env('APP_NAME')}}] Privacy</title>
 @stop
 
 @section('content')

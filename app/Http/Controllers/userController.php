@@ -124,7 +124,7 @@ class userController extends Controller
 
         try{
 
-            $subject = "(SMS-Verification Contact From) " . $subject;
+            $subject = "(" . env('APP_NAME') . " Contact From) " . $subject;
             $to = 'replaygate@gmail.com';
             Mail::send('mails.contact', ['content' => $content], function ($message) use($subject,$email, $to){
                 $message->from($email);
@@ -291,11 +291,11 @@ class userController extends Controller
         $business = $this->GetPayPal();
         $item_name = $numbers . " Numbers For 1 Year (" . $plan_str . " Plan)";
         $currency_code = 'USD';
-        $custom = "SMS-Verification";
+        $custom =  env('APP_NAME');
         $amount = $usd;
         $return = 'https://shorturl.at/iDFRZ';
         $notify_url = 'http://lehbabi.com/paypal';
-        //$cancel_return = 'https://sms-verification.net';
+        //$cancel_return = 'https:// " . env('APP_DOMAIN') . "';
 
         $properties = array(
             "cmd"=>$cmd,

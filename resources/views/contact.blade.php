@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <title>[SMS-Verification] Contact</title>
+    <title>[{{env('APP_NAME')}}] Contact</title>
 
 @stop
 

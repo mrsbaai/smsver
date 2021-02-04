@@ -28,9 +28,9 @@ class start extends Mailable
      */
     public function build()
     {
-        $address = 'no-replay@sms-verification.net';
-        $name = '[SMS-Verification]';
-        $subject = 'Welcome To [SMS-Verification] 🚀';
+        $address = "no-replay@" . env('APP_DOMAIN');
+        $name = "[" . env('APP_NAME') . "]";
+        $subject = "Welcome To [" . env('APP_NAME') . "] 🚀";
 
         return $this->markdown('mails.start')
             ->from($address, $name)
