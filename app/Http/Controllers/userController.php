@@ -127,7 +127,7 @@ class userController extends Controller
             $subject = "(" . env('APP_NAME') . " Contact From) " . $subject;
             $to = 'replaygate@gmail.com';
             Mail::send('mails.contact', ['content' => $content], function ($message) use($subject,$email, $to){
-                $message->from($email);
+                $message->replyTo($email);
                 $message->subject($subject);
                 $message->to($to);
             });
