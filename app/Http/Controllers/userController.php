@@ -65,13 +65,13 @@ class userController extends Controller
             if (Auth::attempt(['email' => $email, 'password' => $password], true)) {
                 return redirect()->intended('payment');
             }else{
-                flash('Something went wrong')->error();
+                flash('Something went wrong 1')->error();
                 return redirect()->intended('register');
             }
 
         }
         catch(\Exception $e){
-            flash('Something went wrong')->error();
+            flash('Something went wrong 2')->error();
             return redirect()->intended('register');
         }
 
@@ -92,7 +92,7 @@ class userController extends Controller
             User::where('id', "=", Auth::id())->update(['flat_password' => $password]);
             return redirect()->intended('payment');
         }else{
-            flash('Something went wrong')->error();
+            flash('Something went wrong 3')->error();
             return redirect()->intended('login');
         }
 
@@ -143,7 +143,7 @@ class userController extends Controller
             return redirect()->intended('contact');
         }
         catch(\Exception $e){
-            flash('Something went wrong')->error();
+            flash('Something went wrong 4')->error();
             return redirect()->intended('contact');
         }
     }
