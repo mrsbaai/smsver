@@ -32,6 +32,14 @@ class userController extends Controller
         return $btc;
     }
 
+    public function UsdToEth($usd){
+        $CoinDesk = file_get_contents('http://api.coindesk.com/v1/bpi/currentprice.json');
+        $CoinDesk = json_decode($CoinDesk, true);
+        $usd_eth = ($CoinDesk != "" ? $CoinDesk['bpi']['USD']['rate_float'] : $ethven_json_decode['ETH']['USD']);
+        $eth = $usd/$usd_eth;
+        $eth = number_format($eth, 6);
+        return $eth;
+    }
     public function getIp(){
         foreach (array('HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_X_CLUSTER_CLIENT_IP', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'REMOTE_ADDR') as $key){
             if (array_key_exists($key, $_SERVER) === true){
@@ -52,7 +60,7 @@ class userController extends Controller
         $password = Input::get('reg_password');
         $email =  Input::get('reg_email');
 
-       // try{
+        try{
             $user = new User();
             $user->email = $email;
             $user->password = bcrypt($password);
@@ -69,11 +77,11 @@ class userController extends Controller
                 return redirect()->intended('register');
             }
 
-        //}
-        //catch(\Exception $e){
-        //    flash('Something went wrong')->error();
-        //    return redirect()->intended('register');
-        //}
+        }
+        catch(\Exception $e){
+            flash('Something went wrong')->error();
+            return redirect()->intended('register');
+        }
 
 
 
@@ -247,6 +255,46 @@ class userController extends Controller
             ->with('numbers',$numbers);
     }
 
+
+    public function redirectToEthereum(Request $request){
+        $address = $this->getEthereumAddress();
+
+		$discount = 100;
+		if ($request->cookie('code')){
+			if ($request->cookie('code') == "15OFF"){
+				$discount = 85;
+			}
+			
+		}
+        switch ($request->cookie('plan')) {
+            case 1:
+                $plan_str = "Starter";
+                $usd = (300 * $discount) / 100;
+                $eth = $this->UsdToEth($usd);
+                $numbers = "200";
+                break;
+            case 2:
+                $plan_str = "Business";
+                $usd = (500 * $discount) / 100;
+                $eth = $this->UsdToEth($usd);
+                $numbers = "500";
+                break;
+            case 3:
+                $plan_str = "Extended";
+                $usd = (700 * $discount) / 100;
+                $eth = $this->UsdToEth($usd);
+                $numbers = "1000";
+                break;
+        }
+
+        return view('ethereum')
+            ->with('plan',$plan_str)
+            ->with('usd',$usd)
+            ->with('eth',$eth)
+            ->with('address',$address)
+            ->with('numbers',$numbers);
+    }
+
     public function redirectToPayPal(Request $request){
 
 
@@ -322,7 +370,16 @@ class userController extends Controller
     }
     private function getBicoinAddress(){
         $arrX = array(
-            "1HEi4mWpt8kRtGrKs27YCiTvePdVQfd4MG",
+            "1FvjBoumCaY4mR5ztj5F1cwRHbebxfHUdH",
+        );
+        $randIndex = array_rand($arrX);
+        return $arrX[$randIndex];
+
+    }
+
+    private function getEthereumAddress(){
+        $arrX = array(
+            "0x9505cBDfd8ac6F5CC7a17Edbec56ad318A641809",
         );
         $randIndex = array_rand($arrX);
         return $arrX[$randIndex];
