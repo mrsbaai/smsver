@@ -84,9 +84,8 @@
 			<h3 class="mb-3">Please Choose A Payment Method:</h3>
       
        <!-- <a href="/paypal" class="btn btn-lg paybutton paypal" aria-disabled="true"><span><i class="fa fa-paypal"></i> PayPal </span></a>  --> 
-      <a href="/ethereum" class="btn btn-lg paybutton ethereuum"><span><i class="fa fa-ethereum"></i> Ethereum </span></a>
 
-
+      <a href="/ethereum" class="btn btn-lg paybutton bitcoin"><span><i class="fa fa-bitcoin"></i> Ethereum </span></a>
       <a href="/bitcoin" class="btn btn-lg paybutton bitcoin"><span><i class="fa fa-bitcoin"></i> Bitcoin </span></a>
       
       <br/><br/>
