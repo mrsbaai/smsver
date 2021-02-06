@@ -18,7 +18,7 @@ class userController extends Controller
 
 
     public function test(){
-		echo file_get_contents("https://receive-sms.com/ppdisposable");
+		return UsdToBtc(500) . "          --             " . UsdToEth(500);
 		
 
     }
