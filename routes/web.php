@@ -65,7 +65,7 @@ Route::post('/type','userController@redeem')->middleware(CheckPaid::class)->midd
 Route::get('/paypal','userController@redirectToPayPal')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
 Route::get('/bitcoin','userController@redirectToBitcoin')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
 
-Route::get('/etherium','userController@redirectToEthereum')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
+Route::get('/ethereum','userController@redirectToEthereum')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
 
 Route::get('/terms','pagesController@terms')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
 Route::get('/thankyou','userController@thankyou')->middleware(CheckPaid::class)->middleware(CheckCountry::class);
