@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 
     <!--Icon Fonts-->
-    <link rel="stylesheet" media="screen" href="../fonts/font-awesome/font-awesome.min.css" />
+    <link href="../fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
 
 @stop
 
