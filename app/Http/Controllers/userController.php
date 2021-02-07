@@ -221,8 +221,8 @@ class userController extends Controller
 
 		$discount = 100;
 		if ($request->cookie('code')){
-			if ($request->cookie('code') == "15OFF"){
-				$discount = 85;
+			if ($request->cookie('code') == "crypto-forever-335"){
+				$discount = 90;
 			}
 			
 		}
@@ -261,8 +261,8 @@ class userController extends Controller
 
 		$discount = 100;
 		if ($request->cookie('code')){
-			if ($request->cookie('code') == "15OFF"){
-				$discount = 85;
+			if ($request->cookie('code') == "crypto-forever-335"){
+				$discount = 90;
 			}
 			
 		}
