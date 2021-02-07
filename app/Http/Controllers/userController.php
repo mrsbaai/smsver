@@ -33,9 +33,9 @@ class userController extends Controller
     }
 
     public function UsdToEth($usd){
-        $CoinDesk = file_get_contents('http://api.coindesk.com/v1/bpi/currentprice.json');
+        $CoinDesk = file_get_contents('https://production.api.coindesk.com/v1/currency/ticker?currencies=ETH');
         $CoinDesk = json_decode($CoinDesk, true);
-        $usd_eth = ($CoinDesk != "" ? $CoinDesk['bpi']['USD']['rate_float'] : $ethven_json_decode['ETH']['USD']);
+        $usd_eth = $CoinDesk['data']['currency']['ETH']['quotes']['USD']['price'];
         $eth = $usd/$usd_eth;
         $eth = number_format($eth, 6);
         return $eth;
