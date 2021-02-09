@@ -170,8 +170,8 @@ class userController extends Controller
     public function showChooseType(Request $request){
 		$discount = 100;
 		if ($request->cookie('code') !== null){
-			if ($request->cookie('code') == "GF4EZSXQ"){
-				$discount = 80;
+			if ($request->cookie('code') == "crypto-forever-335"){
+				$discount = 90;
 				$code = $request->cookie('code');
 			}else{
 				$code = "-";
@@ -180,7 +180,7 @@ class userController extends Controller
 		}else{
 			$code = "-";
 		}
-		
+		return $code;
 		switch ($request->cookie('plan')) {
             case 1:
                 $plan_str = "Starter";
@@ -300,8 +300,8 @@ class userController extends Controller
 
 		$discount = 100;
 		if ($request->cookie('code') !== null){
-			if ($request->cookie('code') == "GF4EZSXQ"){
-				$discount = 80;
+			if ($request->cookie('code') == "crypto-forever-335"){
+				$discount = 90;
 				$code = $request->cookie('code');
 			}else{
 				$code = "-";
