@@ -180,7 +180,7 @@ class userController extends Controller
 		}else{
 			$code = "-";
 		}
-		return $code;
+		return $discount;
 		switch ($request->cookie('plan')) {
             case 1:
                 $plan_str = "Starter";
