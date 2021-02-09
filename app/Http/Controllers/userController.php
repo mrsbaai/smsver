@@ -203,7 +203,7 @@ class userController extends Controller
                 $numbers = "1000";
                 break;
         }
-        return $usd;
+
         return view('type')
             ->with('plan',$plan_str)
             ->with('code',$code)
