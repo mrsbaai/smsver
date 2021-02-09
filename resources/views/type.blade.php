@@ -89,10 +89,8 @@
       <a href="/bitcoin" class="btn btn-lg paybutton bitcoin"><span><i class="fab fa-btc"></i> Bitcoin </span></a>
       
       <br/><br/>
-      <span class="label label-danger">Use promo code "crypto-forever-335" </span>
+      <span class="label label-danger">Limited time offer: Use promo code "crypto-forever-335" to get %10 OFF</span>
 
-      
-      
 
 		</div>
 
