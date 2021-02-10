@@ -35,7 +35,7 @@
 
 
     @if(Auth::check())
-        <div class="container col-xs-6 col-md-6 text-left" style="padding-top:5px;">
+        <div class="container col-xs-6 col-md-6 text-left" style="padding:30px;">
             <div class="btn-group" data-toggle="buttons">
                 <h3  style="margin:0px;padding:0px;"> [{{env('APP_DOMAIN')}}]</h3>
                 @if(Auth::check())
@@ -45,20 +45,20 @@
 
         </div>
 
-        <div class="container col-xs-6 text-right" style="padding-top:10px;">
+        <div class="container col-xs-6 text-right" style="padding:30px;">
             <div class="btn-group" data-toggle="buttons">
                 <a href="/logout" type="button" class="btn btn-dark">Logout</a>
             </div>
         </div>
     @else
-        <div class="container col-xs-12 col-md-5 text-left" style="padding-top:5px;">
+        <div class="container col-xs-12 col-md-5 text-left" style="padding:30px;">
             <div class="btn-group" data-toggle="buttons">
                 <h3 style="margin:0px;padding:0px;"> [{{env('APP_DOMAIN')}}]</h3>
             </div>
 
         </div>
 
-        <div class="container col-xs-12 col-md-7 text-right" style="padding-top:10px;">
+        <div class="container col-xs-12 col-md-7 text-right" style="padding:30px;">
             <div class="btn-group" data-toggle="buttons">
                 <a  href="/" type="button" class="btn btn-dark">Home</a>
                 <a  href="/api" type="button" class="btn btn-dark">Api</a>
