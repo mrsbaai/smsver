@@ -66,7 +66,7 @@
             <h2>Example:</h2>
             <p>Send SMS Messages to these numbers and see inbound messages below.</p>
 
-            <div class="table-responsive">
+            <div class="table-responsive" stye="font-size:200%">
                 <table class="table table-condensed">
                     <thead>
                     <tr>
@@ -77,7 +77,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><b>[+19292090971]</b></td>
+                            <td><b>[+1 92 92 09 09 71]</b></td>
                             <td>United States</td>
                         </tr>
 
