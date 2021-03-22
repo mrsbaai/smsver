@@ -133,7 +133,7 @@ class userController extends Controller
         //try{
 
             $subject = "(" . env('APP_NAME') . " Contact From) " . $subject;
-            $to = 'replaygate@gmail.com';
+            $to = 'Support@bulk-pva.com';
             Mail::send('mails.contact', ['content' => $content], function ($message) use($subject,$email, $to){
                 $message->replyTo($email);
                 $message->subject($subject);
