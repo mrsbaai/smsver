@@ -181,28 +181,38 @@ class userController extends Controller
 			$code = "-";
 		}
 		
-		switch ($request->cookie('plan')) {
-            case 1:
-                $plan_str = "Starter";
-				$original = 300;
-                $usd = ($original * $discount) / 100;
-            
-                $numbers = "200";
-                break;
-            case 2:
-                $plan_str = "Business";
-				$original = 500;
-                $usd = ($original * $discount) / 100;
+        if ($request->cookie('plan')){
+            switch ($request->cookie('plan')) {
+                case 1:
+                    $plan_str = "Starter";
+                    $original = 300;
+                    $usd = ($original * $discount) / 100;
                 
-                $numbers = "500";
-                break;
-            case 3:
-                $plan_str = "Extended";
-				$original = 700;
-                $usd = ($original * $discount) / 100;
-                $numbers = "1000";
-                break;
+                    $numbers = "200";
+                    break;
+                case 2:
+                    $plan_str = "Business";
+                    $original = 500;
+                    $usd = ($original * $discount) / 100;
+                    
+                    $numbers = "500";
+                    break;
+                case 3:
+                    $plan_str = "Extended";
+                    $original = 700;
+                    $usd = ($original * $discount) / 100;
+                    $numbers = "1000";
+                    break;
+            }
+
+        }else{
+            $plan_str = "Business";
+            $original = 500;
+            $usd = ($original * $discount) / 100;
+            
+            $numbers = "500";
         }
+
 
         return view('type')
             ->with('plan',$plan_str)
