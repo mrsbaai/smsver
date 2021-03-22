@@ -130,7 +130,7 @@ class userController extends Controller
 
 
 
-        //try{
+        try{
 
             $subject = "(" . env('APP_NAME') . " Contact From) " . $subject;
             $to = 'Support@bulk-pva.com';
@@ -149,11 +149,11 @@ class userController extends Controller
 
             flash('Thank you for your message! We will get back to you as soon as possible.')->clear();
             return redirect()->intended('contact');
-        //}
-        //catch(\Exception $e){
-        //    flash('Something went wrong')->error();
-        //    return redirect()->intended('contact');
-        //}
+        }
+        catch(\Exception $e){
+            flash('Something went wrong')->error();
+            return redirect()->intended('contact');
+        }
     }
 
     public function showPayment($plan = null, Request $request){
