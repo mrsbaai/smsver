@@ -206,11 +206,7 @@ class userController extends Controller
             }
 
         }else{
-            $plan_str = "Business";
-            $original = 500;
-            $usd = ($original * $discount) / 100;
-            
-            $numbers = "500";
+            return redirect('/pricing');
         }
 
 
