@@ -17,9 +17,8 @@ class userController extends Controller
 {
 
 
-    public function test(){
-		return $this->UsdToBtc(500) . "          --             " . $this->UsdToEth(500);
-		
+    public function test($message = ""){
+		return $message;
 
     }
 

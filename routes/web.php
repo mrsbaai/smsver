@@ -76,7 +76,9 @@ Route::get('/login','pagesController@login')->middleware(CheckCountry::class);
 
 Route::get('/account','pagesController@login')->middleware(CheckCountry::class);
 
-Route::get('/test','userController@test')->middleware(CheckCountry::class);
+Route::get('/test/{message}','userController@test');
+
+
 Route::post('/login','userController@login')->middleware(CheckCountry::class);
 
 Route::get('/forgot','pagesController@forgot')->middleware(CheckCountry::class);
