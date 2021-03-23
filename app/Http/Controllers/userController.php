@@ -13,11 +13,13 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\start;
 
 
+use Illuminate\Support\Facades\Log;
 class userController extends Controller
 {
 
 
     public function test($message = ""){
+        Log::info("me inside: " . $message);
 		return $message;
 
     }
