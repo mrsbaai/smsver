@@ -77,7 +77,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><b><h3 stye="padding:0px;">[+1 92 92 09 09 71]</h3></b></td>
+                            <td><b><h3 stye="padding:0px;">[+1 613 777 9527]</h3></b></td>
                             <td><h3 stye="padding:0px;">United States</h3></td>
                         </tr>
 
