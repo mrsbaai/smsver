@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "798d8d304d8f927673f35158a5e65f29",
+    "content-hash": "10e528d10ba1d99d2fa6186a34647762",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1085,6 +1085,59 @@
             "time": "2019-02-16T20:54:15+00:00"
         },
         {
+            "name": "nissicreative/laravel-recaptcha",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nissicreative/laravel-recaptcha.git",
+                "reference": "61fdad9cf4dc8c814599b3827fc7ef3d17fad99f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nissicreative/laravel-recaptcha/zipball/61fdad9cf4dc8c814599b3827fc7ef3d17fad99f",
+                "reference": "61fdad9cf4dc8c814599b3827fc7ef3d17fad99f",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2",
+                "illuminate/support": "^5.0 || ^6.0 || ^7.0",
+                "php": "^5.6 || ^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nissi\\ReCaptcha\\ReCaptchaServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nissi\\ReCaptcha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Folsom",
+                    "email": "mike@nissicreative.com"
+                }
+            ],
+            "description": "A simple reCAPTCHA implementation for your Laravel project.",
+            "keywords": [
+                "laravel",
+                "recaptcha"
+            ],
+            "support": {
+                "issues": "https://github.com/nissicreative/laravel-recaptcha/issues",
+                "source": "https://github.com/nissicreative/laravel-recaptcha/tree/1.0.5"
+            },
+            "time": "2020-04-06T20:45:33+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v2.0.18",
             "source": {
@@ -1480,6 +1533,52 @@
                 "lumen"
             ],
             "time": "2018-02-27T08:11:14+00:00"
+        },
+        {
+            "name": "robdudley/smtp-validate-email",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robdudley/smtp-validate-email.git",
+                "reference": "ee7cef706c4e8b34a75ae83bd13e659ffe4890ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robdudley/smtp-validate-email/zipball/ee7cef706c4e8b34a75ae83bd13e659ffe4890ef",
+                "reference": "ee7cef706c4e8b34a75ae83bd13e659ffe4890ef",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SMTPValidateEmail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Tomaš Trkulja [zytzagoo]",
+                    "email": "zyt@zytzagoo.net"
+                },
+                {
+                    "name": "Rob Dudley",
+                    "email": "rob@rcwd.me"
+                }
+            ],
+            "description": "Validates an email address by checking for MX records and performing and SMTP triplet connection",
+            "homepage": "https://github.com/robdudley/smtp-validate-email",
+            "keywords": [
+                "email",
+                "smtp",
+                "validation"
+            ],
+            "support": {
+                "source": "https://github.com/robdudley/smtp-validate-email/tree/master"
+            },
+            "time": "2016-08-04T09:47:50+00:00"
         },
         {
             "name": "simplesoftwareio/simple-qrcode",
@@ -4135,5 +4234,6 @@
     "platform": {
         "php": ">=5.6.4"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }
