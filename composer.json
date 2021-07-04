@@ -13,7 +13,6 @@
         "laravelcollective/html": "~5.0",
         "nissicreative/laravel-recaptcha": "^1.0",
         "rap2hpoutre/laravel-log-viewer": "^0.11.0",
-        "robdudley/smtp-validate-email": "^0.0.2",
         "simplesoftwareio/simple-qrcode": "~1"
     },
     "require-dev": {

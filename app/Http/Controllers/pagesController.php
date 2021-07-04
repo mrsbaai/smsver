@@ -8,30 +8,13 @@ use Illuminate\Support\Facades\Auth;
 use DB;
 
 use Illuminate\Support\Facades\Response;
-use SMTPValidateEmail\Validator as SmtpEmailValidator;
+
 
 use App\User;
 class pagesController extends Controller
 {
 	
-	    public function validateTest(){
 
-
-        $sender = 'example@hotmail.com';
-        $emails = array(
-            'ylfo2ik3ti9fgij4zmtw@hotmail.com',
-            'blooddity@hotmail.com'
-
-        );
-
-        $validator = new SmtpEmailValidator($emails, $sender);
-        $results   = $validator->validate();
-        $log = $validator->getLog();
-        return Response::json(array($results, $log));
-
-
-
-    }
 
 public function getIp(){
         foreach (array('HTTP_CLIENT_IP', 'HTTP_X_FORWARDED_FOR', 'HTTP_X_FORWARDED', 'HTTP_X_CLUSTER_CLIENT_IP', 'HTTP_FORWARDED_FOR', 'HTTP_FORWARDED', 'REMOTE_ADDR') as $key){
